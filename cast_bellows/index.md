@@ -6,7 +6,7 @@ nav_order: 3
 # Cast Bellows
 The 3D-printed soft bellows are problematic for long-term use: the material ages over time and becomes porous. In addition, the layer-by-layer production causes the bellows to fail after just a few load cycles. The silicone casting process is an alternative, as the entire membrane cures homogeneously. The semi-modular robot is used as an example to show how casted bellows can be manufactured and replace the printed ones. Using similar approaches, cast bellows can also be realized for the modular SPONGE.
 <p align="center">
-<img src="../images/bellows_cast.png" width=500>
+<img src="../images/bellows_cast.png" width=700>
 </p>
 
 ## Downloads

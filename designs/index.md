@@ -16,5 +16,5 @@ The actuators are (except for electronic components and screws/nuts) fully 3D-pr
 | printer| materials |
 | :----: | :----: |
 [Stratasys Objet350 Connex3](https://www.stratasys.com/en/) | VeroBlackPlus/VeroWhitePlus <br >Agilus30 <br> SUP706|
- [Formlabs Form2](https://formlabs.com/3d-printers/form-2/) | BlackV4|
+ [Formlabs Form 2](https://formlabs.com/3d-printers/form-2/) | BlackV4|
 | [Ultimaker 3](https://www.ultimaker-3.de/) | any PLA filament|

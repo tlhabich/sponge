@@ -10,7 +10,7 @@ The actuator has a diameter of 82mm and a total height of 52mm. The angular rang
 ## Downloads
 
 * 3D models
-   * [Files for 3D-Printer (.stl)](/sponge/downloads/SPONGE_SemiModular_CAD_stl.zip)
+   * [Files for 3D-Printer (.stl)](/sponge/downloads/SPONGE_SemiModular_stl.zip)
    * [CAD-Files created with Autodesk Inventor (.ipt,.iam)](/sponge/downloads/SPONGE_SemiModular_CAD_inventor.zip)
 
 ## Details

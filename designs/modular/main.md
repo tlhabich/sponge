@@ -10,7 +10,7 @@ The actuator has a diameter of 66 mm and a total height of 94 mm. The angular ra
 ## Downloads
 
 * 3D models
-   * [Files for 3D-Printer (.stl)](/sponge/downloads/SPONGE_Modular_CAD_stl.zip)
+   * [Files for 3D-Printer (.stl)](/sponge/downloads/SPONGE_Modular_stl.zip)
    * [CAD-Files created with Autodesk Inventor (.ipt,.iam)](/sponge/downloads/SPONGE_Modular_CAD_inventor.zip)
 * PCB
   * [Gerber Files (.zip)](/sponge/downloads/SPONGE_PCB_Gerber.zip)

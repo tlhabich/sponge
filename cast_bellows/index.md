@@ -54,7 +54,7 @@ Several vacuum/pressure cycles are used to eliminate trapped air bubbles in the 
 ### Post-Processing
 1. Take out **(8)** with **(2)** from the mold.
 2. Remove carefully **(2)**. This is possible due to the soft material.
-3. Cut off carefully excess cured silicone from **(8)**. **Only for semi-modular bellows**: Place **(10)** between the folds of **(8)**.
+3. Cut off excess cured silicone from **(8)**. **Only for semi-modular bellows**: Place **(10)** between the folds of **(8)**.
 4. Glue **(9)** to the bottom of **(8)** using silicone rubber adhesive ([Sil-Poxy](https://www.smooth-on.com/products/sil-poxy/)).
 5. Glue **(7)** to the top of **(8)** using the same silicone glue.
 6. Cure the glue for the time specified by the manufacturer (24 hours).

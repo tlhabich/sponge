@@ -4,7 +4,7 @@ nav_order: 3
 ---
 
 # Cast Bellows
-The 3D-printed soft bellows are problematic for long-term use: the material ages over time and becomes porous. In addition, the layer-by-layer production causes the bellows to fail after just a few load cycles. The silicone casting process is an alternative, as the entire membrane cures homogeneously. For both robots, it is shows how casted bellows can be manufactured to replace the printed ones. The semi-modular bellows consists of an additional ring that prevents ballooning.
+The 3D-printed soft bellows are problematic for long-term use: the material ages over time and becomes porous. In addition, the layer-by-layer production causes the bellows to fail after just a few load cycles. The silicone casting process is an alternative, as the entire membrane cures homogeneously. For both robots, it is shown how cast bellows can be manufactured to replace the printed ones. The semi-modular bellows consists of an additional ring that prevents ballooning.
 <p align="center">
 <img src="../images/bellows_cast.png" width=700>
 </p>

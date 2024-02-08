@@ -15,7 +15,7 @@ The actuator has a diameter of 66 mm and a total height of 94 mm. The angular ra
 * PCB
   * [Gerber Files (.zip)](/sponge/downloads/SPONGE_PCB_Gerber.zip)
   * [Fusion360 files (.f3z,.sch,.brd)](/sponge/downloads/SPONGE_PCB_F360.zip)
-  * [Code](/sponge/downloads/SPONGE_Modular_Software.zip)
+  * [Code](https://github.com/tlhabich/sponge/tree/main/test_bench/software/modular_robot_i2c)
 
 ## Details
 

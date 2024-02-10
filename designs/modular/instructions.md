@@ -44,7 +44,7 @@ nav_order: 1
 3. Assemble frames: Slightly bend **(4)** and insert into **(1)**. **(2)** and **(6)** must oppose each other.
 4. Mount **(17a)** to **(4)** using **(12)** and **(13)**
 5. Mount **(17b)** to **(4)** using **(12)** and **(13)** (Mount **(17c)** instead, if building the last actuator).
-6. Insert **(7)** into **(5)**. Using alcohol as lubricant makes this process easier. For further information, please refer to the microvalves datasheet.
+6. Insert **(7)** into **(5)**. Using alcohol as lubricant makes this process easier. For further information, please refer to the microvalve datasheet.
 7. Insert **(5)** into recesses in **(4)**. The curve of **(5)** must align with the curve of **(4)**.
 8. Insert **(3)** into recesses in **(4)**.
 9. Join the parts together with **(12)** and **(13)**.

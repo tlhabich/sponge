@@ -11,7 +11,7 @@ Both actuators consist of a rigid frame, a 1-DoF joint and two antagonistic soft
 | :----: | :----: |
 |[<img src="images/../../images/semi_modular_sponge_module.png" width=200>](https://tlhabich.github.io/sponge/designs/semi_modular/main.html) | [<img src="images/../../images/modular_sponge_module.png" width=200>](https://tlhabich.github.io/sponge/designs/modular/main.html)|
 
-The actuators are (except for electronic components and screws/nuts) fully 3D-printable. They are printed using Polyjet technology, enabling multi-material printing. This way, the soft air bellows with rigid platforms can be printed. The valve interfaces for integrating the microvalves into the modular actuator are printed using resin technology, as this allows better surface smoothness to achieve airtightness.
+The actuators are (except for electronic components and screws/nuts) fully 3D-printable. They are printed using Polyjet technology, enabling multi-material printing. This way, the soft air bellows with rigid platforms can be printed. During printing, the parts are coated with a gel-like support material, which can be removed using dentist tools, followed by loosening in an ultrasound bath. The valve interfaces for integrating the microvalves into the modular actuator are printed using resin technology, as this allows better surface smoothness to achieve airtightness.
 
 | printer| materials |
 | :----: | :----: |

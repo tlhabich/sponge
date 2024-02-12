@@ -6,7 +6,7 @@ nav_order: 3
 # Cast Bellows
 The 3D-printed soft bellows are problematic for long-term use: the material ages over time and becomes porous. In addition, the layer-by-layer production causes the bellows to fail after just a few load cycles. The silicone casting process is an alternative, as the entire membrane cures homogeneously. For both robots, it is shown how cast bellows can be manufactured to replace the printed ones. The semi-modular bellows consists of an additional ring that prevents ballooning.
 <p align="center">
-<img src="../images/bellows_cast.png" width=700>
+<img src="../images/bellows_cast.png" width=600>
 </p>
 
 ## Downloads
@@ -29,9 +29,9 @@ The 3D-printed soft bellows are problematic for long-term use: the material ages
 | **(4)** | plug | casting| 1 |1
 | **(5)** | screw M2x20 | mounting| 16 | 8
 | **(6)** | nut M2 | mounting | 16 |8
-| **(7)** | upper platform | mounting <br> sealing | 1 |1
+| **(7)** | upper platform | mounting <br> semi-modular: sealing | 1 |1
 | **(8)** | cast membrane | actuation | 1 |1
-| **(9)** | lower plattform | mounting | 1 |1
+| **(9)** | lower plattform | mounting <br> modular: sealing | 1 |1
 | **(10)** | ring | prevent <br>ballooning | 1 |0
 
 ## Manufacturing and Assembly
@@ -69,7 +69,8 @@ When you downloaded the .stl files (Links above), you need to pay attention to t
 |**(2)**|PLA filament | core.stl |
 |**(3)**|PLA filament | upper_mold.stl|
 |**(4)**|PLA filament | plug.stl|
-|**(7)**|Agilus30 | cast_bellow_upper_platform_seal.stl |
+|**(7)**|Agilus30 | semi-modular: cast_bellow_upper_platform_seal.stl |
 |**(7)**|VeroBlackPlus/VeroWhitePlus | cast_bellow_upper_platform.stl |
 |**(9)**|VeroBlackPlus/VeroWhitePlus | cast_bellow_lower_platform.stl |
+|**(9)**|Agilus30 | modular: cast_bellow_lower_platform_seal.stl |
 |**(10)**|VeroBlackPlus/VeroWhitePlus | ring.stl |

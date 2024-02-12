@@ -1,8 +1,10 @@
 /*
  * i2c_slave.c
  *
- *  Created on: Jul 4, 2023
- *      Author: habich
+ *  Object containing all necessary functions for i2c communication protocol
+ *      with STM32f4xxx microcontroller
+ *  This is a basic implementation of the protocol, only essential features
+ *	are included. For further information see: TODO
  */
 
 
@@ -64,6 +66,12 @@ void i2c_slave_init(I2C_Slave* slave) {
 	slave->sent_bytes=0;
 	slave->bufferAddress=0;
 
+	slave->hi2c->Init.OwnAddress1 = slave->address << 1;
+
+	  if (HAL_I2C_Init(slave->hi2c) != HAL_OK)
+	  {
+	    Error_Handler();
+	  }
 
 	active_i2c_slave = slave;
 
@@ -88,7 +96,7 @@ void i2c_addrCallback(I2C_Slave* slave,uint8_t TransferDirection, uint16_t AddrM
 		} else if (TransferDirection == I2C_DIRECTION_RECEIVE) {
 			slave->direction = I2C_SLAVE_DIRECTION_RECEIVE;
 			HAL_I2C_Slave_Seq_Transmit_IT(slave->hi2c,
-					&slave->receiveBuffer[slave->bufferAddress], 1, I2C_NEXT_FRAME);
+					&slave->sendBuffer[slave->bufferAddress], 1, I2C_NEXT_FRAME);
 		}
 }
 

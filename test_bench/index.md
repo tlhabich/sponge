@@ -18,7 +18,10 @@ The communication is realized using EtherCAT protocol and the corresponding open
 - Matlab R2018b (tested with it, update to newer versions pending)
 - RT-PC with EtherCAT ([SETUP_RTPC.MD](https://github.com/SchapplM/etherlab-examples/blob/master/SETUP_RTPC.MD) and [SETUP_ETHERCAT.MD](https://github.com/SchapplM/etherlab-examples/blob/master/SETUP_ETHERCAT.MD)).
 - Dev-PC with EtherLab (also [SETUP_ETHERCAT.MD](https://github.com/SchapplM/etherlab-examples/blob/master/SETUP_ETHERCAT.MD))
-- **TO DO:** Describe I2C requirements and upload necessary files
+- Arduino-like development board  with [EasyCAT shield](https://www.bausano.net/shop/en/home/16-arduino-ethercat.html) (tested on [NUCLEO-F401RE](https://www.mouser.de/ProductDetail/STMicroelectronics/NUCLEO-F401RE?qs=sGAEpiMZZMuqBwn8WqcFUv%2FX0DKhApUpi46qP7WpjrffIid8Wo1rTg%3D%3D). Similar boards are suitable as long as they share the arduino pin configuration and support I2C and SPI communication protocols)
+- SWD programming device (such as [ST-Link V3 Set](https://www.mouser.de/ProductDetail/STMicroelectronics/STLINK-V3SET?qs=qSfuJ%252bfl%2Fd5d4WYsOW6M6w%3D%3D))
+- [Arduino IDE](https://www.arduino.cc/) and [EasyCAT Library](https://www.bausano.net/en/hardware/easycat.html)
+- [STM32 Cube IDE](https://www.st.com/en/development-tools/stm32cubeide.html#get-software)
 
 ## Usage
 1. Dev-PC: Initialize parameters and open Simulink model via ``init.m``

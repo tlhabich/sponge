@@ -96,7 +96,7 @@ int main(void)
   MX_ADC1_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  // read address pins
+  // read i2c address pins
   addr_bits[0]= HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_12);
   addr_bits[1]= HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_13);
   addr_bits[2]= HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_14);
@@ -105,7 +105,7 @@ int main(void)
   i2c.address = (addr_bits[3]<<3) + (addr_bits[2]<<2) + (addr_bits[1]<<1) + (addr_bits[0]);
   i2c.rxCallback = i2c_rx_callback;
   i2c.hi2c = &hi2c1;
-
+  //initialize and start i2c
   i2c_slave_init(&i2c);
   i2c_slave_start(&i2c);
 
@@ -312,21 +312,16 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+// i2c callback that occurs once the i2c controller sent it's commands.
 void i2c_rx_callback(uint8_t* buf, uint8_t num_bytes) {
 
 	uint8_t cmd_v1 = buf[0];
 	uint8_t cmd_v2 = buf[1];
 
-	// Add the code to control the valves
-	//HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, cmd_v1);
-	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8, cmd_v1);
-	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_9, cmd_v2);
-
-
-	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0,cmd_v1);
-
-
+	// Control of the valves
+	//HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, cmd_v1); // send to LED for debug purposes
+	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8, cmd_v1); // valve1 open or closed
+	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_9, cmd_v2); // valve2 open or closed
 
 }
 

@@ -1,8 +1,10 @@
 /*
  * i2c_slave.c
  *
- *  Created on: Jul 4, 2023
- *      Author: habich
+ *  Object containing all necessary functions for i2c communication protocol
+ *      with STM32f4xxx microcontroller
+ *  This is a basic implementation of the protocol, only essential features
+ *	are included. For further information see: TODO
  */
 
 

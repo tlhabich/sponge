@@ -35,34 +35,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := Haley_Platine
+BUILD_ARTIFACT_NAME := SPONGE_PCB
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-Haley_Platine.elf \
+SPONGE_PCB.elf \
 
 MAP_FILES += \
-Haley_Platine.map \
+SPONGE_PCB.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-Haley_Platine.list \
+SPONGE_PCB.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: Haley_Platine.elf secondary-outputs
+main-build: SPONGE_PCB.elf secondary-outputs
 
 # Tool invocations
-Haley_Platine.elf Haley_Platine.map: $(OBJS) $(USER_OBJS) /home/habich/haley_ws/MA_HAACK/test_bench/stm32ws/Haley_Platine/STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Haley_Platine.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/habich/haley_ws/MA_HAACK/test_bench/stm32ws/Haley_Platine/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Haley_Platine.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+SPONGE_PCB.elf SPONGE_PCB.map: $(OBJS) $(USER_OBJS) ~/sponge/test_bench/software/modular_robot_i2c/SPONGE_PCB/STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "SPONGE_PCB.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"~/sponge/test_bench/software/modular_robot_i2c/SPONGE_PCB/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPONGE_PCB.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -71,14 +71,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Haley_Platine.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Haley_Platine.list"
+SPONGE_PCB.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "SPONGE_PCB.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) Haley_Platine.elf Haley_Platine.list Haley_Platine.map default.size.stdout
+	-$(RM) SPONGE_PCB.elf SPONGE_PCB.list SPONGE_PCB.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

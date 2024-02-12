@@ -6,10 +6,10 @@
 ../firmware/i2c/i2c_slave.c:45:6:HAL_I2C_ErrorCallback	16	static
 ../firmware/i2c/i2c_slave.c:51:6:HAL_I2C_AbortCpltCallback	16	static
 ../firmware/i2c/i2c_slave.c:58:6:i2c_slave_init	16	static
-../firmware/i2c/i2c_slave.c:73:6:i2c_slave_start	16	static
-../firmware/i2c/i2c_slave.c:78:6:i2c_addrCallback	16	static
-../firmware/i2c/i2c_slave.c:95:6:i2c_listenCompleteCallback	24	static
-../firmware/i2c/i2c_slave.c:108:6:i2c_rxCompleteCallback	16	static
-../firmware/i2c/i2c_slave.c:118:6:i2c_txCompleteCallback	16	static
-../firmware/i2c/i2c_slave.c:125:6:i2c_errorCallback	16	static
-../firmware/i2c/i2c_slave.c:129:6:i2c_abortCompleteCallback	16	static
+../firmware/i2c/i2c_slave.c:79:6:i2c_slave_start	16	static
+../firmware/i2c/i2c_slave.c:84:6:i2c_addrCallback	16	static
+../firmware/i2c/i2c_slave.c:101:6:i2c_listenCompleteCallback	24	static
+../firmware/i2c/i2c_slave.c:114:6:i2c_rxCompleteCallback	16	static
+../firmware/i2c/i2c_slave.c:124:6:i2c_txCompleteCallback	16	static
+../firmware/i2c/i2c_slave.c:131:6:i2c_errorCallback	16	static
+../firmware/i2c/i2c_slave.c:135:6:i2c_abortCompleteCallback	16	static

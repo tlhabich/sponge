@@ -61,6 +61,8 @@ void i2c_rx_callback(uint8_t* buf, uint8_t num_bytes);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 I2C_Slave i2c;
+uint8_t addr_bits[4] = {0};
+uint16_t adc_value;
 /* USER CODE END 0 */
 
 /**
@@ -94,8 +96,15 @@ int main(void)
   MX_ADC1_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  i2c.address = 0x01;
+  // read address pins
+  addr_bits[0]= HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_12);
+  addr_bits[1]= HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_13);
+  addr_bits[2]= HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_14);
+  addr_bits[3]= HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_15);
+  //set address
+  i2c.address = (addr_bits[3]<<3) + (addr_bits[2]<<2) + (addr_bits[1]<<1) + (addr_bits[0]);
   i2c.rxCallback = i2c_rx_callback;
+  i2c.hi2c = &hi2c1;
 
   i2c_slave_init(&i2c);
   i2c_slave_start(&i2c);
@@ -106,11 +115,22 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  HAL_ADC_Start(&hadc1); // start ADC
+	  HAL_ADC_PollForConversion(&hadc1, 100); //Wait till ADC converted value
+	  adc_value = HAL_ADC_GetValue(&hadc1); // store value
+	  HAL_ADC_Stop(&hadc1); //stop ADC
+
+	  i2c.sendBuffer[0]= adc_value & 0xFF; //buffer lower lower byte
+	  i2c.sendBuffer[1]= adc_value >> 8; //buffer upper byte
+
+	  //i2c.sendBuffer[0]= 5; //buffer lower lower byte
+	  //i2c.sendBuffer[1]= 6; //buffer upper byte
+
+	  //HAL_Delay(100);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_0);
-	HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }
@@ -231,7 +251,7 @@ static void MX_I2C1_Init(void)
   hi2c1.Instance = I2C1;
   hi2c1.Init.ClockSpeed = 400000;
   hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
-  hi2c1.Init.OwnAddress1 = 2;
+  hi2c1.Init.OwnAddress1 = 10;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
   hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
   hi2c1.Init.OwnAddress2 = 0;
@@ -294,7 +314,20 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 
 void i2c_rx_callback(uint8_t* buf, uint8_t num_bytes) {
-	uint8_t a = 1;
+
+	uint8_t cmd_v1 = buf[0];
+	uint8_t cmd_v2 = buf[1];
+
+	// Add the code to control the valves
+	//HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, cmd_v1);
+	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8, cmd_v1);
+	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_9, cmd_v2);
+
+
+	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0,cmd_v1);
+
+
+
 }
 
 /* USER CODE END 4 */

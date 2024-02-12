@@ -1,7 +1,7 @@
-main.c:70:5:main	1
-main.c:122:6:SystemClock_Config	3
-main.c:169:13:MX_ADC1_Init	3
-main.c:221:13:MX_I2C1_Init	2
-main.c:255:13:MX_GPIO_Init	1
-main.c:296:6:i2c_rx_callback	1
-main.c:306:6:Error_Handler	1
+main.c:72:5:main	1
+main.c:142:6:SystemClock_Config	3
+main.c:189:13:MX_ADC1_Init	3
+main.c:241:13:MX_I2C1_Init	2
+main.c:275:13:MX_GPIO_Init	1
+main.c:316:6:i2c_rx_callback	1
+main.c:339:6:Error_Handler	1

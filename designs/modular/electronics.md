@@ -8,7 +8,9 @@ nav_order: 2
 # Electronics
 The PCB handles the modular communication with the [test bench](https://tlhabich.github.io/sponge/test_bench/) via I2C. It comprises a STM32F401 microcontroller (μC), circuits for reading sensor signals and controlling the valves as well as wire connections for hardware, inter-integrated circuit (I2C) bus lines and power supply. It is supplied with 24V and 3.3V. Each μC is configured as an I2C slave. As the master serves a NUCLEO-F401RE development board, that is located outside the robot. Attached to it is a Bausano EasyCAT-shield that enables a connection from the NUCLEO board to the EtherCAT bus for communication with the test bench. Since I2C is not configured for long-distance communication and is limited in speed, the number of slaves is limited to 12. Future iterations may tackle that problem by implementing for example the CAN or RS485 protocol.
 
-<img src="images/../../../images/electrics.png">
+<p align="center">
+  <img src="images/../../../images/modularity.png" width=600>
+</p>
 
 ## Circuit Board
 

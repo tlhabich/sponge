@@ -61,8 +61,8 @@ all: main-build
 main-build: SPONGE_PCB.elf secondary-outputs
 
 # Tool invocations
-SPONGE_PCB.elf SPONGE_PCB.map: $(OBJS) $(USER_OBJS) ~/sponge/test_bench/software/modular_robot_i2c/SPONGE_PCB/STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "SPONGE_PCB.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"~/sponge/test_bench/software/modular_robot_i2c/SPONGE_PCB/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPONGE_PCB.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+SPONGE_PCB.elf SPONGE_PCB.map: $(OBJS) $(USER_OBJS) ../STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "SPONGE_PCB.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"../STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPONGE_PCB.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

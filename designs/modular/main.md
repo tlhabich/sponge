@@ -6,7 +6,7 @@ has_children: true
 ---
 
 # Modular SPONGE
-The actuator has a diameter of 66 mm and a total height of 94 mm. The angular range is approximately ±40°. at a maximum working pressure of approximately 0.3 bar. A PCB reads the sensor signal and controls microvalves.
+The actuator has a diameter of 66 mm and a total height of 94 mm. A PCB reads the sensor signal and controls microvalves.
 ## Downloads
 
 * 3D models

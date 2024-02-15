@@ -5,7 +5,7 @@ nav_order: 2
 ---
 
 # Designs
-Both actuators consist of a rigid frame, a 1-DoF joint and two antagonistic soft air bellows. The joint angle is measured using a Hall encoder. The **semi-modular** actuator has one pneumatic pipe per bellow connected to it. When stacked, the pipes and sensor cables are led through the whole system, leading to an increased footprint if many actuators are to be stacked. The **modular** actuator has integrated microvalves connected to one single pneumatic supply line for the whole system. A PCB within each actuator realizes modular communication to control the valves and read the encoder. This way, the footprint remains constant for an arbitrary number of stacked actuators.
+Both actuators consist of a rigid frame, a 1-DoF joint and two antagonistic soft air bellows. The joint angle is measured using a Hall encoder. The **semi-modular** actuator has one pneumatic tube per bellows connected to it. When stacked, the tubes and sensor cables are led through the whole system, leading to an increased footprint if many actuators are to be stacked. The **modular** actuator has integrated microvalves connected to one single pneumatic supply line for the whole system. A PCB within each actuator realizes modular communication to control the valves and read the encoder. This way, the footprint remains constant for an arbitrary number of stacked actuators.
 
 |semi-modular|modular|
 | :----: | :----: |

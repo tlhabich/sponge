@@ -61,7 +61,7 @@ Several vacuum/pressure cycles are used to eliminate trapped air bubbles in the 
 
 ## 3D-printing
 
-When you downloaded the .stl files (Links above), you need to pay attention to the preparation of the files for printing. The upper platform of the bellows, printed with Polyjet technology, need to be printed as an assembly due to the sealing. Use “add as assembly” to create the print job.
+When you downloaded the .stl files (links above), you need to pay attention to the preparation of the files for printing. The sealed platform of the bellows, printed with Polyjet technology, need to be printed as an assembly due to the sealing. Use “add as assembly” to create the print job.
 
 | part no. |material | files |
 | :----: | :----: | :----: |

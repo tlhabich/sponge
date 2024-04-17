@@ -18,7 +18,7 @@ In addition, the variety of designs makes it difficult to compare published meth
 That's why the entire project is made freely available, including detailed descriptions of manufacturing and assembly, downloads for CAD models and PCB designs as well as lists of purchased parts and the whole test-bench software. This way, anyone can rebuild the systems and follow up on our work. SPONGE is available in two variants: semi-modular (a) vs. modular (b). The former is only modular in terms of stackability, whereas the latter is modular in terms of stackability, actuation, and communication. More info can be found in the related publication.
 
 ## Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TMLpRXZHuLA?si=iUfTd53h7JUjnsYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TMLpRXZHuLA?si=7h0NEn7rlYwk9cts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Citing
 The paper is [freely available](https://arxiv.org/abs/2404.10734) via arXiv. If you use parts of this project for your research, please cite the following publication:

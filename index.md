@@ -18,12 +18,15 @@ In addition, the variety of designs makes it difficult to compare published meth
 That's why the entire project is made freely available, including detailed descriptions of manufacturing and assembly, downloads for CAD models and PCB designs as well as lists of purchased parts and the whole test-bench software. This way, anyone can rebuild the systems and follow up on our work. SPONGE is available in two variants: semi-modular (a) vs. modular (b). The former is only modular in terms of stackability, whereas the latter is modular in terms of stackability, actuation, and communication. More info can be found in the related publication.
 
 ## Video
-**Will be uploaded to YouTube and referenced here after acceptance of the submitted article**
-## Citing
-If you use parts of this project for your research, please cite the following publication:
-```
-ToDo after publication (currently under review)
-```
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TMLpRXZHuLA?si=iUfTd53h7JUjnsYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+## Citing
+The paper is [freely available](https://arxiv.org/abs/2404.10734) via arXiv. If you use parts of this project for your research, please cite the following publication:
+```
+SPONGE: Open-Source Designs of Modular Articulated Soft Robots
+T.-L. Habich, J. Haack, M. Belhadj, D. Lehmann, T. Seel and M. Schappler
+IEEE Robotics and Automation Letters (RA-L) 2024
+DOI: 10.1109/LRA.2024.3388855
+```
 ## Authors
 SPONGE is part of the PhD thesis of [Tim-Lukas Habich](https://www.imes.uni-hannover.de/en/institute/team/m-sc-tim-lukas-habich) (Email: <tim-lukas.habich@imes.uni-hannover.de>) and was developed with support from colleagues (Moritz Schappler, Dustin Lehmann, Thomas Seel, Dennis Bank) and supervised students (Jonas Haack, Mehdi Belhadj, Sarah Kleinjohann, Jan Christoph Haupt).

@@ -32,4 +32,4 @@ tmux send-keys "$INITCMD" C-m "roscore" C-m
 tmux select-pane -t 0 # wechsele wieder in erste Spalte
 tmux split-window -v # nächstes Fenster in erster Spalte unten
 # Programm 4: Simulink-Modell starten
-tmux send-keys "$INITCMD" C-m "/home/ec/rtmdl/appint_ros_example" C-m
+tmux send-keys "$INITCMD" C-m "/home/ec/rtmdl/test_bench_sponge" C-m

@@ -4,5 +4,4 @@ results
 slprj
 test_bench_sponge
 *.mat
-test_bench_sponge_sfun.mexa64
 

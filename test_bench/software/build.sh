@@ -1,5 +1,5 @@
 #!/bin/bash -e
-# Compile ROS-workspace
+# ROS-Workspace kompilieren
 
 # Moritz Schappler, moritz.schappler@imes.uni-hannover.de, 2020-03  
 # (C) Institut für Mechatronische Systeme, Leibniz Universität Hannover

@@ -28,7 +28,7 @@ The communication is realized using EtherCAT protocol and the corresponding open
 2. Dev-PC: If necessary, modify Simulink model
 3. Dev-PC: Compile/Build model via ``Ctrl+B``
 4. Dev-PC: Compile ROS-Workspace and copy to RT-PC via ``$ ./build.sh && ./sync.sh``
-5. Connect to RT-PC via SSH and run the following commands on RT-PC: ``ec_start`` (start EtherCAT master) and ``$ ~/app_interface/ros_install/scripts/autostart.sh && tmux attach-session -t app`` (start compiled model)
+5. Connect to RT-PC via SSH and run the following commands on RT-PC: ``sudo /etc/init.d/ethercat start`` (start EtherCAT master) and ``$ ~/app_interface/ros_install/scripts/autostart.sh && tmux attach-session -t app`` (start compiled model)
 6. Dev-PC: Start external mode in Simulink model via ``Connect To Target`` to visualize/record data or alter settings
-7. After the experiment on RT-PC: ``Ctrl+C`` in tmux windows, ``$ tmux kill-session`` and ``$ ec_stop`` to stop the EtherCAT master
+7. After the experiment on RT-PC: ``Ctrl+C`` in tmux windows, ``$ tmux kill-session`` and ``$ sudo /etc/init.d/ethercat stop`` to stop the EtherCAT master
 8. Dev-PC: Postprocessing via ``postprocess.m`` (saves recorded data in single file: ``measurements_struct.mat``)

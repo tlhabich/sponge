@@ -28,5 +28,11 @@ T.-L. Habich, J. Haack, M. Belhadj, D. Lehmann, T. Seel and M. Schappler
 IEEE Robotics and Automation Letters (RA-L) 2024
 DOI: 10.1109/LRA.2024.3388855
 ```
+## Further Publications
+There are publications that deal with modeling and control of SPONGE:
+- [IEEE-RAS RoboSoft 2023](https://arxiv.org/pdf/2303.01840)
+- [IEEE ICRA 2023](https://arxiv.org/pdf/2303.00065)
+- Stay tuned for more!
+
 ## Authors
 SPONGE is part of the PhD thesis of [Tim-Lukas Habich](https://www.imes.uni-hannover.de/en/institute/team/m-sc-tim-lukas-habich) (Email: <tim-lukas.habich@imes.uni-hannover.de>) and was developed with support from colleagues (Moritz Schappler, Dustin Lehmann, Thomas Seel, Dennis Bank) and supervised students (Jonas Haack, Mehdi Belhadj, Sarah Kleinjohann, Jan Christoph Haupt).

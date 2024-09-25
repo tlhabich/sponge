@@ -1,0 +1,17 @@
+mFiles/build/
+out/build
+.vscode/
+build/
+mFiles/slprj/
+*.slxc
+mFiles/appint_ros_example
+mFiles/appint_ros_example_grt_rtw/
+mFiles/appint_ros_example_etl_hrt/
+mFiles/Offline_NLMPC_Casadi_sfunc_grt_rtw
+mFiles/Offline_NLMPC_Casadi_sfunc_grt_rtw/
+mFiles/Offline_NLMPC_Casadi_sfunc_grt_htw/
+mFiles/results/
+*.so
+*_old.*
+*.m~
+*.o

@@ -8,7 +8,7 @@ nav_order: 5
 <img src="images/../../images/mpc_cover.png" width=600>
 </p>
 
-This page describes the implementation of a learning-based nonlinear model predictive control (NMPC) using recurrent neural networks (RNNs), which is experimantally validated with SPONGE. The RNNs are trained in PyTorch and their hyperparameters are optimized via ASHA. They are then integrated into Simulink and used as models within NMPC. For this purpose, CasADi is integrated into Simulink as an S-function, enabling its use on a real-time computer. The code is based on the [test-bench code](https://tlhabich.github.io/sponge/test_bench/). It is therefore recommended that you are familiar with this code. The hardware setup remains the same - only the software components are added.
+This page describes the implementation of a learning-based nonlinear model predictive control (NMPC) using recurrent neural networks (RNNs), which is experimentally validated with SPONGE. The RNNs are trained in PyTorch, and their hyperparameters are optimized via ASHA. They are then integrated into Simulink and used as models within NMPC. For this purpose, CasADi is integrated into Simulink as an S-function, enabling its use on a real-time computer. The code is based on the [test-bench code](https://tlhabich.github.io/sponge/test_bench/). It is therefore recommended that you familiarize yourself with this code. The hardware setup remains the same - only the software components are added.
 
 **The code for neural-network training, hyperparameter optimization and learning-based NMPC with RNNs can be found in the [git repository](https://github.com/tlhabich/sponge/tree/main/rnn_mpc/software).**
 

@@ -29,9 +29,9 @@ IEEE Robotics and Automation Letters (RA-L) 2024
 DOI: 10.1109/LRA.2024.3388855
 ```
 ## Further Publications
-There are publications that deal with modeling and control of SPONGE:
-- [IEEE-RAS RoboSoft 2023](https://arxiv.org/pdf/2303.01840)
-- [IEEE ICRA 2023](https://arxiv.org/pdf/2303.00065)
+- [Learning-based Position and Stiffness Feedforward Control (IEEE-RAS RoboSoft 2023)](https://arxiv.org/pdf/2303.01840)
+- [Intuitive Telemanipulation within Locomotion and Reorientation (IEEE ICRA 2023)](https://arxiv.org/pdf/2303.00065)
+- [Learning-based Nonlinear Model Predictive Control using Recurrent Neural Networks (IEEE RA-L 2024)](https://arxiv.org/abs/2411.05616)
 - Stay tuned for more!
 
 ## Authors

@@ -32,7 +32,7 @@ This page describes the implementation of a learning-based nonlinear model predi
 10. After the experiment on RT-PC: ``Ctrl+C`` in tmux windows, ``$ tmux kill-session`` and ``$ sudo /etc/init.d/ethercat stop`` to stop the EtherCAT master
 
 ## Citing
-The paper is [freely available](https://arxiv.org/abs/2411.05616) via arXiv. If you use parts of this project for your research, please cite the following publication:
+The paper is [freely available](https://arxiv.org/pdf/2411.05616) via arXiv. If you use parts of this project for your research, please cite the following publication:
 ```
 Learning-based Nonlinear Model Predictive Control of Articulated Soft Robots using Recurrent Neural Networks
 H. Schäfke, T.-L. Habich, C. Muhmann, S. F. G. Ehlers, T. Seel and M. Schappler

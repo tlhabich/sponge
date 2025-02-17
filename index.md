@@ -32,7 +32,7 @@ DOI: 10.1109/LRA.2024.3388855
 - [Learning-based Position and Stiffness Feedforward Control (IEEE-RAS RoboSoft 2023)](https://arxiv.org/abs/2303.01840)
 - [Intuitive Telemanipulation within Locomotion and Reorientation (IEEE ICRA 2023)](https://arxiv.org/abs/2303.00065)
 - [Learning-based Model Predictive Control using Recurrent Neural Networks (IEEE RA-L 2024)](https://arxiv.org/abs/2411.05616)
-- Stay tuned for more!
+- [Physics-Informed Neural Networks for Learning and Control (under review)](https://arxiv.org/abs/2502.01916)
 
 ## Authors
 SPONGE is part of the PhD thesis of [Tim-Lukas Habich](https://www.imes.uni-hannover.de/en/institute/team/m-sc-tim-lukas-habich) (Email: <tim-lukas.habich@imes.uni-hannover.de>) and was developed with support from colleagues (Moritz Schappler, Dustin Lehmann, Thomas Seel, Dennis Bank) and supervised students (Jonas Haack, Mehdi Belhadj, Sarah Kleinjohann, Jan Christoph Haupt).

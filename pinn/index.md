@@ -1,5 +1,5 @@
 ---
-title: Physics-Informed Neural Networks
+title: Physics-Informed ML
 nav_order: 5
 ---
 
@@ -14,6 +14,6 @@ The work is currently under review. After acceptance you will find the datasets 
 The paper is [freely available](https://arxiv.org/abs/2502.01916) via arXiv. If you use parts of this project for your research, please cite the following publication:
 ```
 Generalizable and Fast Surrogates: Model Predictive Control of Articulated Soft Robots using Physics-Informed Neural Networks
-T.-L. Habich, A. Mohammad, S. F. G. Ehlers, M. Bensch, T. Seel, M. Schappler
+T.-L. Habich, A. Mohammad, S. F. G. Ehlers, M. Bensch, T. Seel, and M. Schappler
 Currently under review
 ```

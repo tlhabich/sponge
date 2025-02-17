@@ -35,7 +35,7 @@ This page describes the implementation of a learning-based nonlinear model predi
 The paper is [freely available](https://arxiv.org/abs/2411.05616) via arXiv. If you use parts of this project for your research, please cite the following publication:
 ```
 Learning-based Nonlinear Model Predictive Control of Articulated Soft Robots using Recurrent Neural Networks
-H. Schäfke, T.-L. Habich, C. Muhmann, S. F. G. Ehlers, T. Seel and M. Schappler
+H. Schäfke, T.-L. Habich, C. Muhmann, S. F. G. Ehlers, T. Seel, and M. Schappler
 IEEE Robotics and Automation Letters (RA-L) 2024
 DOI: 10.1109/LRA.2024.3495579
 ```

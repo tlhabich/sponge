@@ -24,7 +24,7 @@ That's why the entire project is made freely available, including detailed descr
 The paper is [freely available](https://arxiv.org/abs/2404.10734) via arXiv. If you use parts of this project for your research, please cite the following publication:
 ```
 SPONGE: Open-Source Designs of Modular Articulated Soft Robots
-T.-L. Habich, J. Haack, M. Belhadj, D. Lehmann, T. Seel and M. Schappler
+T.-L. Habich, J. Haack, M. Belhadj, D. Lehmann, T. Seel, and M. Schappler
 IEEE Robotics and Automation Letters (RA-L) 2024
 DOI: 10.1109/LRA.2024.3388855
 ```

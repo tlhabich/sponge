@@ -1,7 +1,5 @@
 function [MPC_params, NN_weights] = fcn_mat2yaml(model_folder, write_yaml, pred_horizon, t_sample_mpc_s, Q_pos, P_pos, R_p, dR_p, p_max_bar, p_min_bar, q_minmax_deg)
-    %% Description:
-    % Writes all necessary parameters for the MPC into YAML files,
-    % so that they can be read by the S-Function
+    % Write MPC parameters and neural network weights to YAML files for S-Function
     %
     %% Inputs:
     % write_yaml - flag indicating whether the YAML should be saved (true/false)
@@ -27,8 +25,8 @@ function [MPC_params, NN_weights] = fcn_mat2yaml(model_folder, write_yaml, pred_
     dt_mpc = t_sample_mpc_s;
     
     % read in parameters
-    pfad_aktuell = string(pwd());
-    pfad_GRU = pfad_aktuell + '/models/'+model_folder;
+    current_path = string(pwd());
+    pfad_GRU = current_path + '/models/'+model_folder;
     NN_weights = load(string(pfad_GRU) + '/GRU_weights.mat');
     NN_description = load(string(pfad_GRU) + '/GRU_params.mat');
     NN_weights = fcn_Transfer2Double(NN_weights);
@@ -36,12 +34,13 @@ function [MPC_params, NN_weights] = fcn_mat2yaml(model_folder, write_yaml, pred_
 
     % write parameter to yaml
     if write_yaml == 1
-        WriteYaml(fullfile(pfad_aktuell,'Extern/MPC_casadi_SFunction/include/models/sys_params.yaml'),NN_weights);
-        disp('Modellparameter abgespeichert!')
+        WriteYaml(fullfile(current_path,'Extern/MPC_casadi_SFunction/include/models/sys_params.yaml'),NN_weights);
+        disp('Model parameters saved!')
     else
-        disp('Modellparameter nicht abgespeichert!')
+        disp('Model parameters not saved')
     end
 
+    % Initialize cost matrices
     Q = struct;
     for i = 1:n_akt
         variableName = ['Q_' num2str(i) '_' num2str(i)];
@@ -67,9 +66,9 @@ function [MPC_params, NN_weights] = fcn_mat2yaml(model_folder, write_yaml, pred_
     end
 
     %% MPC-Constraints
-    p_min_Pa = p_min_bar * 1e5; % Maximaler "desired" Druck in Pa
+    p_min_Pa = p_min_bar * 1e5; % Maximum desired pressure in Pa
     p_max_Pa = p_max_bar * 1e5;
-    q_minmax_rad = deg2rad(q_minmax_deg);% Maximaler Winkel in rad
+    q_minmax_rad = deg2rad(q_minmax_deg);% Maximum angle in rad
     xn_hilf_min = [repmat(-q_minmax_rad, 1, n_akt), repmat(p_min_Pa, 1, 2*n_akt)];
     xn_hilf_max = [repmat(q_minmax_rad, 1, n_akt), repmat(p_max_Pa, 1, 2*n_akt)];
     xs_hilf_min = fcn_MinMax(xn_hilf_min, NN_description.x_scaler_min, NN_description.x_scaler_max, [-1,1], 0);
@@ -115,12 +114,12 @@ function [MPC_params, NN_weights] = fcn_mat2yaml(model_folder, write_yaml, pred_
     MPC_params.u_ub = u_ub;
     MPC_params.u_lb = u_lb;
 
-    % Schreiben der yaml Dateien
+    % Write YAML files
     if write_yaml == 1
-        WriteYaml(fullfile(pfad_aktuell,'Extern/MPC_casadi_SFunction/include/models/mpc_params.yaml'),MPC_params);
-        disp('MPC-Parameter abgespeichert!')
+        WriteYaml(fullfile(current_path,'Extern/MPC_casadi_SFunction/include/models/mpc_params.yaml'),MPC_params);
+        disp('MPC parameters saved!')
     else
-        disp('MPC-Parameter nicht abgespeichert!')
+        disp('MPC parameters not saved!')
     end
 
 end % function

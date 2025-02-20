@@ -5,7 +5,7 @@ namespace sponge
   using namespace std;
   using namespace casadi;
   
-SORO_MPC::SORO_MPC(ModelBase *model, double pred_horizon, double dt, double max_computation_time)
+SPONGE_MPC::SPONGE_MPC(ModelBase *model, double pred_horizon, double dt, double max_computation_time)
 {
 
     model_ = model;
@@ -25,13 +25,13 @@ SORO_MPC::SORO_MPC(ModelBase *model, double pred_horizon, double dt, double max_
 }
 
 
-SORO_MPC::~SORO_MPC()
+SPONGE_MPC::~SPONGE_MPC()
 {
 }
 
-void SORO_MPC::CreateNLPSolver(double max_computation_time)
+void SPONGE_MPC::CreateNLPSolver(double max_computation_time)
 {   
-    std::cout<< "SORO_MPC - CreateNLPSolver Opti" << std::endl;
+    std::cout << "Creating NLP solver with Opti stack" << std::endl;
     Slice all;
 
     opti_ = Opti();
@@ -40,32 +40,32 @@ void SORO_MPC::CreateNLPSolver(double max_computation_time)
     coptions["print_time"] = false;
     opti_.solver("ipopt", coptions, options);
     
-    //---- decision variables ---------
-    X_ = opti_.variable(n_states_, N_+1); // state trajectory
-    U_ = opti_.variable(n_controls_, N_); // control trajectory (throttle)
+    // Decision variables
+    X_ = opti_.variable(n_states_, N_+1);    // State trajectory
+    U_ = opti_.variable(n_controls_, N_);    // Control trajectory
 
-    //---- parameters ---------
-    X_GOAL_ = opti_.parameter(n_states_, N_+1);
-    H_K_ = opti_.parameter(n_hidden_states_, n_hidden_layers_);
-    X_K_ = opti_.parameter(n_states_, 1);
-    U_K_ = opti_.parameter(n_controls_, 1);
+    // Parameters
+    X_GOAL_ = opti_.parameter(n_states_, N_+1);      // Reference trajectory
+    H_K_ = opti_.parameter(n_hidden_states_, n_hidden_layers_);  // Hidden states
+    X_K_ = opti_.parameter(n_states_, 1);     // Current state
+    U_K_ = opti_.parameter(n_controls_, 1);   // Current input
 
-    //---- initial constraints ---------
-    opti_.subject_to(X_(all,0) == X_K_);    // Erster Optimierter Zustand muss gleich gemessener State sein
+    // Initial constraints
+    opti_.subject_to(X_(all,0) == X_K_);    // First optimized state must match measured state
 
-    //---- cost function ---------
+    // Cost function
     costFunction_ = 0;
     opti_.minimize(costFunction_);
 
-    // ---- dynamic constraints --------
+    // Dynamic constraints
     for (int k = 0; k < N_; ++k) {
-        x_nexk = model_->eval(X_(all,k), U_(all,k),  H_K_);
+        x_nexk = model_->eval(X_(all,k), U_(all,k), H_K_);
         opti_.subject_to(X_(all, k + 1) == x_nexk);
     }
-    std::cout<<"Opti: "<< opti_ << std::endl;
+    std::cout << "Opti stack configuration: " << opti_ << std::endl;
 }
 
-    void SORO_MPC::addStateConstraints(DM x_ub, DM x_lb)
+    void SPONGE_MPC::addStateConstraints(DM x_ub, DM x_lb)
     {   
         // Function to add box constraints on predicted state
         for (int i = 0; i < n_states_; i++)
@@ -75,7 +75,7 @@ void SORO_MPC::CreateNLPSolver(double max_computation_time)
 
     }
 
-    void SORO_MPC::addInputConstraints(DM u_ub, DM u_lb)
+    void SPONGE_MPC::addInputConstraints(DM u_ub, DM u_lb)
     {   
         // Function to add box constraints on predicted input        
         for (int i = 0; i < n_controls_; i++)
@@ -84,7 +84,7 @@ void SORO_MPC::CreateNLPSolver(double max_computation_time)
         }
     }
 
-    void SORO_MPC::addStateStageCost(DM Q)
+    void SPONGE_MPC::addStateStageCost(DM Q)
     {   
         // create symbolic variables stage cost at t=k
         MX x_cost = MX::sym("x_cost", n_states_);
@@ -103,7 +103,7 @@ void SORO_MPC::CreateNLPSolver(double max_computation_time)
     }
 
 
-    void SORO_MPC::addInputStageCost(DM R)
+    void SPONGE_MPC::addInputStageCost(DM R)
     {   
         // create symbolic variables stage cost at t=k
         MX u_cost = MX::sym("u_cost", n_controls_);
@@ -122,7 +122,7 @@ void SORO_MPC::CreateNLPSolver(double max_computation_time)
     }
 
 
-    void SORO_MPC::addTerminalCost(DM P)
+    void SPONGE_MPC::addTerminalCost(DM P)
     {
         // Create Terminal Cost term
         MX x_cost_ = MX::sym("x_cost", n_states_);
@@ -139,7 +139,7 @@ void SORO_MPC::CreateNLPSolver(double max_computation_time)
     }
 
 
-    void SORO_MPC::addStateDifferenceCost(DM dQ)
+    void SPONGE_MPC::addStateDifferenceCost(DM dQ)
     {
         // Create Difference State Cost term
         MX d_x_cost = MX::sym("d_x_cost", n_states_);
@@ -158,7 +158,7 @@ void SORO_MPC::CreateNLPSolver(double max_computation_time)
     }
 
 
-    void SORO_MPC::addInputDifferenceCost(DM dR)
+    void SPONGE_MPC::addInputDifferenceCost(DM dR)
     {
         MX d_u_cost = MX::sym("d_u_cost", n_controls_);
 
@@ -176,7 +176,7 @@ void SORO_MPC::CreateNLPSolver(double max_computation_time)
     }
 
 
-    void SORO_MPC::addMeanInputCost(DM R_p_mean, DM p_mean_scale)
+    void SPONGE_MPC::addMeanInputCost(DM R_p_mean, DM p_mean_scale)
     {
         // Create Cost term
         MX p_mean_cost_ = MX::sym("p_mean_cost", n_states_);
@@ -195,7 +195,7 @@ void SORO_MPC::CreateNLPSolver(double max_computation_time)
     }
 
 
-    DM SORO_MPC::ComputeControlInput(DM x_meas, DM x_ref, DM h_k_minus_1)
+    DM SPONGE_MPC::ComputeControlInput(DM x_meas, DM x_ref, DM h_k_minus_1)
     {
         // Set initial measured and reference state trajectory and hidden states
         opti_.set_value(X_GOAL_, x_ref);

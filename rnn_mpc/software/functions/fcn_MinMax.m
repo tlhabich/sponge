@@ -1,4 +1,16 @@
 function data_scaled = fcn_MinMax(data, data_min, data_max, feature_range, inverse)   
+    % Apply min-max scaling to data
+    %
+    % Inputs:
+    %   data - Data to scale
+    %   data_min - Minimum values for each feature
+    %   data_max - Maximum values for each feature  
+    %   feature_range - Target range [min max] for scaled data
+    %   inverse - If true, apply inverse scaling
+    %
+    % Output:
+    %   data_scaled - Scaled data
+
     min = single(feature_range(1)); % -1
     max = single(feature_range(2)); % 1
     features = size(data,2);

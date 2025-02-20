@@ -9,7 +9,6 @@ namespace sponge
 class SPONGE_MPC
 {
 private:
-
     bool first_run;
 
     ModelBase *model_;      // System to control. Can be RobotSystem
@@ -22,16 +21,16 @@ private:
     MX P_;              // Symbolic vector for measured x0 and reference x_ref
 
 
-    Opti opti_;             // Opti Objekt erstellen
+    Opti opti_;             // Create Opti object
     string solver_name_;    // Name of the solver (here ipopt)
 
     Dict options, coptions;
-    // Dict solverOpts_;       // Options for Ipopt (see: https://coin-or.github.io/Ipopt/OPTIONS.html)
+    // Dict solverOpts_;      // Options for Ipopt (see: https://coin-or.github.io/Ipopt/OPTIONS.html)
     //Dict nlpOpts_;          // Options for the solver function nlpSolver_
     
     
     MX X_, U_;              // Optimization variabes (state and input sequence over prediction horizon)
-    MX X_K_, U_K_;            // Initial guess for the optimization variables
+    MX X_K_, U_K_;          // Initial guess for the optimization variables
 
     MX H_K_;                // Hidden States of GRU net
     MX X_GOAL_;             // reference Value
@@ -51,18 +50,14 @@ private:
     DM u_opt;               // Optimierte Inputs (mv)
     DM X0_, U0_; 
 
-
     int n_states_, n_controls_, n_outputs_;  // nr of states, inputs and outputs
     int n_hidden_states_, n_hidden_layers_;  // nr of hidden states and hidden layers
     
     Slice all;  // to access a whole row or colon in a casadi matrix SX, MX or DM
 
-
     void CreateNLPSolver(double max_computation_time);  // creates the NLP solver (automatically called in constructor)
 
-
 public:
-
     SPONGE_MPC(ModelBase *model,
         double pred_horizon,
         double dt,

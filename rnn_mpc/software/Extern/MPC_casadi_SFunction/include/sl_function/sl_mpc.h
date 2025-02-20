@@ -13,14 +13,14 @@ extern "C"{
 #endif
 
 typedef struct{
-    double state[N_STATES]; // current measured state
-    double ref[N_STATES][PRED_HORIZON+1]; // desired state vector (positions)
-    double on_off;  // to skipp calculations in 'SL_io_mpc_func'
-    double h_t_minus_1[HIDDEN_STATES][HIDDEN_LAYERS]; // current hidden states of gru net
+    double state[N_STATES];     // Current measured state
+    double ref[N_STATES][PRED_HORIZON+1];  // Desired state trajectory
+    double on_off;              // Enable/disable MPC calculations
+    double h_t_minus_1[HIDDEN_STATES][HIDDEN_LAYERS];  // Current GRU hidden states
 } MPC_IN_type;
     
 typedef struct{
-    double mv[N_INPUTS];                      // computed control input
+    double mv[N_INPUTS];        // Computed control input
 } MPC_OUT_type;
 
 typedef struct {
@@ -36,6 +36,7 @@ typedef struct {
     double u_lb[N_INPUTS];     // lower bound of input constraint
 } MPC_PARAM_type;
 
+// S-function interface
 void SL_start_mpc_func(MPC_PARAM_type* params);
 void SL_io_mpc_func(MPC_IN_type* inports, MPC_OUT_type* outports);
 void SL_terminate_mpc_func();

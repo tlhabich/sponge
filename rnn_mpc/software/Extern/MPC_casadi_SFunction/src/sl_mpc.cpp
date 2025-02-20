@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <math.h> 
 #include <chrono>
@@ -41,7 +40,7 @@ void get_mpc_params(const string config_file, MPC_PARAM_type* params)
 {   
   // read yaml file 
   YAML::Node config = YAML::LoadFile(config_file);
-  std::cout << "Yaml datei wurde eingelesen, dt_mpc:: "<< config["dt_mpc"] << std::endl;
+  std::cout << "YAML file loaded, dt_mpc:: "<< config["dt_mpc"] << std::endl;
   
   std::cout<< "Using MPC with:"
   << "\ndt_mpc = "<< params->dt_mpc
@@ -51,88 +50,90 @@ void get_mpc_params(const string config_file, MPC_PARAM_type* params)
 }
 
 // StartFcnSpec — Function that the S-function calls when it begins execution, specified as a character vector or string.
-void SL_start_mpc_func(MPC_PARAM_type* params){
-  
-  get_mpc_params(mpc_param_config_file, params); // load parameters again from config file because with the s-function block parameters sometimes not all get parsed which is a bug
-  
-  // create object of robot
-  dynamics_mpc = new RobotSystem();
-  // dynamics_mpc->display_net_params(); // to check whether the parameters have been loaded correctly
+void SL_start_mpc_func(MPC_PARAM_type* params)
+{  
+    // Load parameters from config file
+    // Note: Parameters sometimes don't parse correctly through s-function block
+    get_mpc_params(mpc_param_config_file, params);
 
-  n_states = dynamics_mpc->get_n_states();
-  n_controls = dynamics_mpc->get_n_controls(); 
-  n_outputs = dynamics_mpc->get_n_outputs();
-  n_hidden_states = dynamics_mpc->get_n_hidden_states();
-  n_hidden_layers = dynamics_mpc->get_n_hidden_layers();
+    // Initialize robot system
+    dynamics_mpc = new RobotSystem();
+    // dynamics_mpc->display_net_params(); // to check whether the parameters have been loaded correctly
+    
+    // Get system dimensions
+    n_states = dynamics_mpc->get_n_states();
+    n_controls = dynamics_mpc->get_n_controls(); 
+    n_outputs = dynamics_mpc->get_n_outputs();
+    n_hidden_states = dynamics_mpc->get_n_hidden_states();
+    n_hidden_layers = dynamics_mpc->get_n_hidden_layers();
 
-  pred_horizon = params->pred_horizon;
-  dt_mpc = params->dt_mpc;
+    pred_horizon = params->pred_horizon;
+    dt_mpc = params->dt_mpc;
 
-  x_meas = DM::zeros(n_states);
+    // Initialize state vectors
+    x_meas = DM::zeros(n_states);
+    x_ref = DM::zeros(n_states,pred_horizon+1);
+    h_t_minus_1 = DM::zeros(n_hidden_states,n_hidden_layers);
 
-  x_ref = DM::zeros(n_states,pred_horizon+1);
-  h_t_minus_1 = DM::zeros(n_hidden_states,n_hidden_layers);
+    // Print MPC configuration
+    std::cout << "MPC Configuration:"
+              << "\nSample time: " << dt_mpc
+              << "\nPrediction horizon: " << pred_horizon
+              << std::endl;
 
-  // print info output
-  std::cout<< "Using MPC with:"
-  << "\ndt_mpc = "<< dt_mpc
-  << "\nprediction horizon N = "<< pred_horizon
-  << std::endl; 
+    // Initialzize weighting matrices and contraint vectors
+    DM P = DM::zeros(n_states,n_states);
+    DM Q = DM::zeros(n_states,n_states);
+    DM dR = DM::zeros(n_controls,n_controls);
+    DM R = DM::zeros(n_controls,n_controls);
+    DM x_ub = DM::zeros(n_states, 1);
+    DM x_lb = DM::zeros(n_states, 1);
+    DM u_ub = DM::zeros(n_controls, 1);
+    DM u_lb = DM::zeros(n_controls, 1);
 
-  // Initialzize weighting matrices and contraint vectors
-  DM P = DM::zeros(n_states,n_states);
-  DM Q = DM::zeros(n_states,n_states);
-  DM dR = DM::zeros(n_controls,n_controls);
-  DM R = DM::zeros(n_controls,n_controls);
-  DM x_ub = DM::zeros(n_states, 1);
-  DM x_lb = DM::zeros(n_states, 1);
-  DM u_ub = DM::zeros(n_controls, 1);
-  DM u_lb = DM::zeros(n_controls, 1);
+    DM R_p_mean = DM::zeros(pred_horizon, pred_horizon);
+    DM p_mean_scale = DM::zeros(1);
 
-  DM R_p_mean = DM::zeros(pred_horizon, pred_horizon);
-  DM p_mean_scale = DM::zeros(1);
+    // write weighting matrices and contraint vectors from f-function param to casadi variables
+    for (int i = 0; i < n_states; i++)
+    {
+      Q(i,i) = params->Q[i];
+      P(i,i) = params->P[i];
+      x_ub(i) = params->x_ub[i];
+      x_lb(i) = params->x_lb[i];
+      R(i,i) = params->R[i];
+      dR(i,i) = params->dR[i];
+    }
 
-  // write weighting matrices and contraint vectors from f-function param to casadi variables
-  for (int i = 0; i < n_states; i++)
-  {
-    Q(i,i) = params->Q[i];
-    P(i,i) = params->P[i];
-    x_ub(i) = params->x_ub[i];
-    x_lb(i) = params->x_lb[i];
-    R(i,i) = params->R[i];
-    dR(i,i) = params->dR[i];
-  }
+    for (int i = 0; i < n_controls; i++)
+    {
+      R(i,i) = params->R[i];
+      dR(i,i) = params->dR[i];
+      u_ub(i) = params->u_ub[i];
+      u_lb(i) = params->u_lb[i];
+    }
 
-  for (int i = 0; i < n_controls; i++)
-  {
-    R(i,i) = params->R[i];
-    dR(i,i) = params->dR[i];
-    u_ub(i) = params->u_ub[i];
-    u_lb(i) = params->u_lb[i];
-  }
+    for (int i = 0; i < pred_horizon; i++)
+    {
+      R_p_mean(i,i) = 0.02;
+    }
+    p_mean_scale = -0.1;
 
-  for (int i = 0; i < pred_horizon; i++)
-  {
-    R_p_mean(i,i) = 0.02;
-  }
-  p_mean_scale = -0.1;
+    // create object of the MPC controller for the given system
+    sponge_mpc = new SPONGE_MPC(dynamics_mpc, pred_horizon, dt_mpc, dt_mpc);
 
-  // create object of the MPC controller for the given system
-  sponge_mpc = new SPONGE_MPC(dynamics_mpc, pred_horizon, dt_mpc, dt_mpc);
+    // add cost terms and constraints to MPC controller  
+    sponge_mpc->addStateStageCost(Q);
+    sponge_mpc->addInputStageCost(R);
+    sponge_mpc->addTerminalCost(P);
+    sponge_mpc->addInputDifferenceCost(dR);
+    sponge_mpc->addStateConstraints(x_ub, x_lb);
+    sponge_mpc->addInputConstraints(u_ub, u_lb);
+    sponge_mpc->addMeanInputCost(R_p_mean, p_mean_scale);
+    // sponge_mpc->addStateDifferenceCost(dQ);
+    
 
-  // add cost terms and constraints to MPC controller  
-  sponge_mpc->addStateStageCost(Q);
-  sponge_mpc->addInputStageCost(R);
-  sponge_mpc->addTerminalCost(P);
-  sponge_mpc->addInputDifferenceCost(dR);
-  sponge_mpc->addStateConstraints(x_ub, x_lb);
-  sponge_mpc->addInputConstraints(u_ub, u_lb);
-  sponge_mpc->addMeanInputCost(R_p_mean, p_mean_scale);
-  // sponge_mpc->addStateDifferenceCost(dQ);
-  
-
-  std::cout<< "MPC controller configured" << std::endl;
-
+    std::cout<< "MPC controller configured" << std::endl;
 }
 
 void SL_io_mpc_func(MPC_IN_type* inports, MPC_OUT_type* outports){

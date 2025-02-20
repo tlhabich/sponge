@@ -25,17 +25,17 @@ public:
   ModelBase();
   ~ModelBase();
     
-  SX eval(const SX &state, const SX &control, const SX &h_t_minus_1);
-  DM eval(const DM &state, const DM &control, const DM &h_t_minus_1);
-  MX eval(const MX &state, const MX &control, const MX &h_t_minus_1);
+    // Evaluate GRU network with different CasADi types
+    SX eval(const SX &state, const SX &control, const SX &h_t_minus_1);
+    DM eval(const DM &state, const DM &control, const DM &h_t_minus_1);
+    MX eval(const MX &state, const MX &control, const MX &h_t_minus_1);
 
-  int get_n_states();
-  int get_n_controls();
-  int get_n_outputs();
-
-  int get_n_hidden_states();
-  int get_n_hidden_layers();
-
+    // Getters for model dimensions
+    int get_n_states();
+    int get_n_controls();
+    int get_n_outputs();
+    int get_n_hidden_states();
+    int get_n_hidden_layers();
 };
 
 

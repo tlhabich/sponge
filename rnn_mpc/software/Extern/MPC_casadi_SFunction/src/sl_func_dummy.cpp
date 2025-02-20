@@ -2,10 +2,6 @@
 Dummy code for defining the functions for the Simulink S function.
 The content of the functions does not need to be known at the time of compilation.
 The functions are integrated later via a program library.
-
-* Lucas Jürgens, BA bei Moritz Schappler, 2017-04
-* (C) Institut für Regelungstechnik, Leibniz Universität Hannover
-* moritz.schappler@imes.uni-hannover.de
 */
 
 #ifdef DUMMY1   // robot system

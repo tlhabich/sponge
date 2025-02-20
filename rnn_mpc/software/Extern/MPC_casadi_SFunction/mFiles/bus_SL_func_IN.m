@@ -6,10 +6,6 @@ function cellInfo = bus_SL_func_IN(header_file_name)
 % The order of bus element attributes is as follows:
 %   ElementName, Dimensions, DataType, SampleTime, Complexity, SamplingMode, DimensionsMode, Min, Max, DocUnits, Description 
 
-% Lucas Jürgens (BA), lucas.juergens@zubox.de, 2017-02
-% Moritz Schappler, schappler@irt.uni-hannover.de
-% (C) Institut für Regelungstechnik, Universität Hannover
-
 % suppressObject = false; 
 % if nargin == 1 && islogical(varargin{1}) && varargin{1} == false 
 %     suppressObject = true; 

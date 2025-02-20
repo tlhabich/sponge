@@ -1,0 +1,1 @@
+download xml2struct.m and struct2xml.m from Matlab (file exchange)

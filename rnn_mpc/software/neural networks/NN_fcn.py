@@ -40,7 +40,7 @@ from ray.train import Result
 from datetime import datetime
 
 #----------------------------
-#%% Daten einlesen
+#%% Read data
 def loadData(pfad_data,n_aktoren=5, neglegt_pdyn=True, neglegt_qdyn=True, cut_sample=0,):
     data_raw = pd.read_csv(pfad_data, sep = ',', decimal = '.')
     data_raw = data_raw.astype(np.float32)
@@ -582,7 +582,7 @@ class ray_HyperParamOptimization():
         input_dim = xdim+udim
         output_dim = xdim
 
-        # initialise models
+        # initialize models
         if config["model"] == "GRU":
             model = GRU(input_dim, output_dim, config['hidden_dim'], config['num_layer'], config['dropout'])
         elif config["model"] == "LSTM":

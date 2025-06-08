@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.797"
+    ComputedModelVersion    "1.799"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -67,39 +67,39 @@ Model {
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/Angle_Hall"
+      Reference		      "test_bench_lib/angle_hall"
       Path		      "test_bench/positions/Angle_Hall1"
       SID		      "217"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/Angle_Hall"
+      Reference		      "test_bench_lib/angle_hall"
       Path		      "test_bench/positions/Angle_Hall2"
       SID		      "1047"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/Angle_Hall"
+      Reference		      "test_bench_lib/angle_hall"
       Path		      "test_bench/positions/Angle_Hall3"
       SID		      "1327"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/Angle_Hall"
+      Reference		      "test_bench_lib/angle_hall"
       Path		      "test_bench/positions/Angle_Hall4"
       SID		      "1860"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/Angle_Hall"
+      Reference		      "test_bench_lib/angle_hall"
       Path		      "test_bench/positions/Angle_Hall5"
       SID		      "1868"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/EL3104_Voltage"
-      Path		      "test_bench/positions/EL3104_Voltage"
-      SID		      "1872"
+      Reference		      "test_bench_lib/EL3104_bit_to_volt"
+      Path		      "test_bench/positions/EL3104_bit_to_volt"
+      SID		      "3032"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
@@ -109,15 +109,15 @@ Model {
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/EL3702_Voltage"
-      Path		      "test_bench/positions/EL3702_Voltage 1"
-      SID		      "1233"
+      Reference		      "test_bench_lib/EL3702_bit_to_volt"
+      Path		      "test_bench/positions/EL3702_bit_to_volt"
+      SID		      "3030"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/EL3702_Voltage"
-      Path		      "test_bench/positions/EL3702_Voltage 2"
-      SID		      "1234"
+      Reference		      "test_bench_lib/EL3702_bit_to_volt"
+      Path		      "test_bench/positions/EL3702_bit_to_volt1"
+      SID		      "3031"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
@@ -133,9 +133,9 @@ Model {
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/EL3104_bit_to_bar (Piezoventile)"
-      Path		      "test_bench/pressures/EL3104_bit_to_bar (Piezoventile)"
-      SID		      "1874"
+      Reference		      "test_bench_lib/EL3104_bit_to_bar"
+      Path		      "test_bench/pressures/EL3104_bit_to_bar"
+      SID		      "3029"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
@@ -151,21 +151,21 @@ Model {
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/EL3702_bit_to_bar (Piezoventile)"
-      Path		      "test_bench/pressures/EL3702_bit_to_bar (Piezoventile)"
-      SID		      "212"
+      Reference		      "test_bench_lib/EL3702_bit_to_bar"
+      Path		      "test_bench/pressures/EL3702_bit_to_bar"
+      SID		      "1405"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/EL3702_bit_to_bar (Piezoventile)"
-      Path		      "test_bench/pressures/EL3702_bit_to_bar (Piezoventile)1"
+      Reference		      "test_bench_lib/EL3702_bit_to_bar"
+      Path		      "test_bench/pressures/EL3702_bit_to_bar1"
       SID		      "1056"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/EL3702_bit_to_bar (Piezoventile)"
-      Path		      "test_bench/pressures/EL3702_bit_to_bar (Piezoventile)2"
-      SID		      "1405"
+      Reference		      "test_bench_lib/EL3702_bit_to_bar"
+      Path		      "test_bench/pressures/EL3702_bit_to_bar2 "
+      SID		      "212"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
@@ -205,62 +205,62 @@ Model {
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/p_soll2bit"
-      Path		      "test_bench/valves /p_soll2bit"
+      Reference		      "test_bench_lib/p_des_to_bit"
+      Path		      "test_bench/valves /p_des_to_bit"
       SID		      "2083"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/p_soll2bit"
-      Path		      "test_bench/valves /p_soll2bit1"
+      Reference		      "test_bench_lib/p_des_to_bit"
+      Path		      "test_bench/valves /p_des_to_bit1 "
       SID		      "2084"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/p_soll2bit"
-      Path		      "test_bench/valves /p_soll2bit2"
+      Reference		      "test_bench_lib/p_des_to_bit"
+      Path		      "test_bench/valves /p_des_to_bit2"
       SID		      "2085"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/p_soll2bit"
-      Path		      "test_bench/valves /p_soll2bit3"
+      Reference		      "test_bench_lib/p_des_to_bit"
+      Path		      "test_bench/valves /p_des_to_bit3"
       SID		      "2086"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/p_soll2bit"
-      Path		      "test_bench/valves /p_soll2bit4"
+      Reference		      "test_bench_lib/p_des_to_bit"
+      Path		      "test_bench/valves /p_des_to_bit4"
       SID		      "2087"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/p_soll2bit"
-      Path		      "test_bench/valves /p_soll2bit5"
+      Reference		      "test_bench_lib/p_des_to_bit"
+      Path		      "test_bench/valves /p_des_to_bit5"
       SID		      "2088"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/p_soll2bit"
-      Path		      "test_bench/valves /p_soll2bit6"
+      Reference		      "test_bench_lib/p_des_to_bit"
+      Path		      "test_bench/valves /p_des_to_bit6"
       SID		      "2089"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/p_soll2bit"
-      Path		      "test_bench/valves /p_soll2bit7"
+      Reference		      "test_bench_lib/p_des_to_bit"
+      Path		      "test_bench/valves /p_des_to_bit7"
       SID		      "2090"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/p_soll2bit"
-      Path		      "test_bench/valves /p_soll2bit8"
+      Reference		      "test_bench_lib/p_des_to_bit"
+      Path		      "test_bench/valves /p_des_to_bit8"
       SID		      "2091"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "test_bench_lib/p_soll2bit"
-      Path		      "test_bench/valves /p_soll2bit9"
+      Reference		      "test_bench_lib/p_des_to_bit"
+      Path		      "test_bench/valves /p_des_to_bit9"
       SID		      "2092"
       Type		      "LIBRARY_BLOCK"
     }
@@ -317,15 +317,15 @@ Model {
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1810.0, 979.0]
-	  ZoomFactor		  [1.5]
-	  Offset		  [-518.11203406568882, 1447.5970750149597]
+	  ZoomFactor		  [2.0]
+	  Offset		  [-370.89091322659908, 1463.6824252793583]
 	}
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2380"
-	  Extents		  [1810.0, 979.0]
+	  Extents		  [1882.0, 1006.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [-513.03790304112647, -255.74669937817066]
 	}
@@ -366,9 +366,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "entwicklungs-pc"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Jun 07 19:38:03 2025"
-  RTWModifiedTimeStamp	  671225882
-  ModelVersionFormat	  "1.%<AutoIncrement:797>"
+  LastModifiedDate	  "Sun Jun 08 17:33:28 2025"
+  RTWModifiedTimeStamp	  671304807
+  ModelVersionFormat	  "1.%<AutoIncrement:799>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "all"
@@ -1690,9 +1690,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "150"
+    ZoomFactor		    "200"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "3028"
+    SIDHighWatermark	    "3032"
     Block {
       BlockType		      Sum
       Name		      "Add10"
@@ -3055,8 +3055,7 @@ Model {
       "45098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.6509803921568"
       "63],'Title','%<SignalLabel>'),'DisplayLayoutDimensions',[4 3],'DisplayContentCache',[]),extmgr.Configuration('To"
       "ols','Plot Navigation',true,'OnceAtStop',false,'PreviousZoomMode','ZoomY','PreviousAutoscale','XY'),extmgr.Confi"
-      "guration('Tools','Measurements',true,'Version','2018b')),'Version','2018b','Position',[-1919 1 1920 1094],'Visib"
-      "leAtModelOpen','on')"
+      "guration('Tools','Measurements',true,'Version','2018b')),'Version','2018b','Position',[-1915 5 1910 1101])"
       NumInputPorts	      "9"
       Floating		      off
     }
@@ -3357,7 +3356,7 @@ Model {
       ContentPreviewEnabled   on
       System {
 	Name			"Subsystem4"
-	Location		[1992, 27, 3840, 1200]
+	Location		[0, 0, 1920, 1200]
 	Open			on
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -5200,7 +5199,7 @@ Model {
       ContentPreviewEnabled   on
       System {
 	Name			"positions"
-	Location		[1992, 27, 3840, 1200]
+	Location		[0, 0, 1920, 1200]
 	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -5215,7 +5214,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"80"
+	ZoomFactor		"50"
 	Block {
 	  BlockType		  Reference
 	  Name			  "Angle_Hall1"
@@ -5225,8 +5224,8 @@ Model {
 	  ZOrder		  78134
 	  ForegroundColor	  "red"
 	  HideAutomaticName	  off
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/Angle_Hall"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/angle_hall"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -5244,8 +5243,8 @@ Model {
 	  ZOrder		  78135
 	  ForegroundColor	  "red"
 	  HideAutomaticName	  off
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/Angle_Hall"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/angle_hall"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -5263,8 +5262,8 @@ Model {
 	  ZOrder		  78141
 	  ForegroundColor	  "red"
 	  HideAutomaticName	  off
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/Angle_Hall"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/angle_hall"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -5282,8 +5281,8 @@ Model {
 	  ZOrder		  100000
 	  ForegroundColor	  "red"
 	  HideAutomaticName	  off
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/Angle_Hall"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/angle_hall"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -5301,8 +5300,8 @@ Model {
 	  ZOrder		  100000
 	  ForegroundColor	  "red"
 	  HideAutomaticName	  off
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/Angle_Hall"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/angle_hall"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -5457,15 +5456,13 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "EL3104_Voltage"
-	  SID			  "1872"
+	  Name			  "EL3104_bit_to_volt"
+	  SID			  "3032"
 	  Ports			  [4, 4]
 	  Position		  [295, 383, 440, 457]
 	  ZOrder		  100000
-	  ForegroundColor	  "red"
-	  HideAutomaticName	  off
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/EL3104_Voltage"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/EL3104_bit_to_volt"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -5513,14 +5510,13 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "EL3702_Voltage 1"
-	  SID			  "1233"
+	  Name			  "EL3702_bit_to_volt"
+	  SID			  "3030"
 	  Ports			  [2, 2]
-	  Position		  [295, 25, 440, 105]
-	  ZOrder		  78029
-	  ForegroundColor	  "red"
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/EL3702_Voltage"
+	  Position		  [285, 20, 430, 100]
+	  ZOrder		  100000
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/EL3702_bit_to_volt"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -5531,14 +5527,13 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "EL3702_Voltage 2"
-	  SID			  "1234"
+	  Name			  "EL3702_bit_to_volt1"
+	  SID			  "3031"
 	  Ports			  [2, 2]
 	  Position		  [295, 175, 440, 255]
-	  ZOrder		  78030
-	  ForegroundColor	  "red"
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/EL3702_Voltage"
+	  ZOrder		  100000
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/EL3702_bit_to_volt"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -5771,7 +5766,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "Terminator7"
 	  SID			  "2064"
-	  Position		  [465, 400, 485, 420]
+	  Position		  [465, 440, 485, 460]
 	  ZOrder		  100000
 	  ForegroundColor	  "green"
 	}
@@ -5779,7 +5774,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "Terminator8"
 	  SID			  "2065"
-	  Position		  [465, 420, 485, 440]
+	  Position		  [465, 400, 485, 420]
 	  ZOrder		  100000
 	  ForegroundColor	  "green"
 	}
@@ -5787,7 +5782,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "Terminator9"
 	  SID			  "2066"
-	  Position		  [465, 440, 485, 460]
+	  Position		  [465, 420, 485, 440]
 	  ZOrder		  100000
 	  ForegroundColor	  "green"
 	}
@@ -6169,40 +6164,40 @@ Model {
 	  IconDisplay		  "Port number"
 	}
 	Line {
-	  ZOrder		  4944
-	  SrcBlock		  "EL3702_Voltage 1"
+	  ZOrder		  7784
+	  SrcBlock		  "EL3702_bit_to_volt"
 	  SrcPort		  1
-	  Points		  [83, 0; 0, -5]
 	  DstBlock		  "Angle_Hall1"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  4794
+	  ZOrder		  7783
 	  SrcBlock		  "Generic_0"
 	  SrcPort		  4
-	  Points		  [217, 0; 0, -15]
-	  DstBlock		  "EL3702_Voltage 1"
+	  Points		  [210, 0]
+	  DstBlock		  "EL3702_bit_to_volt"
 	  DstPort		  2
 	}
 	Line {
-	  ZOrder		  4946
-	  SrcBlock		  "EL3702_Voltage 2"
+	  ZOrder		  7779
+	  SrcBlock		  "EL3702_bit_to_volt1"
 	  SrcPort		  1
 	  DstBlock		  "Angle_Hall3"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  7088
+	  ZOrder		  7778
 	  SrcBlock		  "Generic_2"
 	  SrcPort		  4
 	  Points		  [220, 0]
-	  DstBlock		  "EL3702_Voltage 2"
+	  DstBlock		  "EL3702_bit_to_volt1"
 	  DstPort		  2
 	}
 	Line {
-	  ZOrder		  7519
-	  SrcBlock		  "EL3104_Voltage"
-	  SrcPort		  3
+	  ZOrder		  7787
+	  SrcBlock		  "EL3104_bit_to_volt"
+	  SrcPort		  2
+	  Points		  [5, 0]
 	  DstBlock		  "Terminator8"
 	  DstPort		  1
 	}
@@ -6214,18 +6209,18 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  4792
+	  ZOrder		  7782
 	  SrcBlock		  "Generic_0"
 	  SrcPort		  2
-	  Points		  [133, 0; 0, -15]
-	  DstBlock		  "EL3702_Voltage 1"
+	  Points		  [133, 0; 0, -20]
+	  DstBlock		  "EL3702_bit_to_volt"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  4945
-	  SrcBlock		  "EL3702_Voltage 1"
+	  ZOrder		  7785
+	  SrcBlock		  "EL3702_bit_to_volt"
 	  SrcPort		  2
-	  Points		  [142, 0; 0, 15]
+	  Points		  [152, 0; 0, 20]
 	  DstBlock		  "Angle_Hall2"
 	  DstPort		  1
 	}
@@ -6237,22 +6232,22 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  7518
-	  SrcBlock		  "EL3104_Voltage"
-	  SrcPort		  2
+	  ZOrder		  7790
+	  SrcBlock		  "EL3104_bit_to_volt"
+	  SrcPort		  4
 	  DstBlock		  "Terminator7"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  6377
-	  SrcBlock		  "EL3104_Voltage"
+	  ZOrder		  7789
+	  SrcBlock		  "EL3104_bit_to_volt"
 	  SrcPort		  1
 	  DstBlock		  "Angle_Hall5"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  6376
-	  SrcBlock		  "EL3702_Voltage 2"
+	  ZOrder		  7780
+	  SrcBlock		  "EL3702_bit_to_volt1"
 	  SrcPort		  2
 	  Points		  [154, 0; 0, 20]
 	  DstBlock		  "Angle_Hall4"
@@ -6273,17 +6268,17 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  7087
+	  ZOrder		  7781
 	  SrcBlock		  "Generic_2"
 	  SrcPort		  2
 	  Points		  [64, 0; 0, -38; 54, 0; 0, 8]
-	  DstBlock		  "EL3702_Voltage 2"
+	  DstBlock		  "EL3702_bit_to_volt1"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  7520
-	  SrcBlock		  "EL3104_Voltage"
-	  SrcPort		  4
+	  ZOrder		  7786
+	  SrcBlock		  "EL3104_bit_to_volt"
+	  SrcPort		  3
 	  DstBlock		  "Terminator9"
 	  DstPort		  1
 	}
@@ -6309,11 +6304,11 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  7611
+	  ZOrder		  7788
 	  SrcBlock		  "EL31xx_1"
 	  SrcPort		  2
 	  Points		  [130, 0; 0, -25]
-	  DstBlock		  "EL3104_Voltage"
+	  DstBlock		  "EL3104_bit_to_volt"
 	  DstPort		  1
 	}
 	Line {
@@ -6685,16 +6680,16 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"175"
 	Block {
 	  BlockType		  Reference
-	  Name			  "EL3104_bit_to_bar (Piezoventile)"
-	  SID			  "1874"
+	  Name			  "EL3104_bit_to_bar"
+	  SID			  "3029"
 	  Ports			  [4, 4]
-	  Position		  [610, 863, 755, 962]
-	  ZOrder		  77584
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/EL3104_bit_to_bar (Piezoventile)"
+	  Position		  [620, 878, 765, 977]
+	  ZOrder		  100000
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/EL3104_bit_to_bar"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -6779,50 +6774,50 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "EL3702_bit_to_bar (Piezoventile)"
-	  SID			  "212"
-	  Ports			  [2, 2]
-	  Position		  [610, 734, 755, 821]
-	  ZOrder		  77444
-	  ForegroundColor	  "green"
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/EL3702_bit_to_bar (Piezoventile)"
-	  SourceType		  "SubSystem"
-	  ShowPortLabels	  "FromPortIcon"
-	  SystemSampleTime	  "-1"
-	  GeneratePreprocessorConditionals off
-	  AllowZeroVariantControls off
-	  PropagateVariantConditions off
-	  ContentPreviewEnabled	  on
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "EL3702_bit_to_bar (Piezoventile)1"
-	  SID			  "1056"
-	  Ports			  [2, 2]
-	  Position		  [610, 599, 755, 686]
-	  ZOrder		  77467
-	  ForegroundColor	  "green"
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/EL3702_bit_to_bar (Piezoventile)"
-	  SourceType		  "SubSystem"
-	  ShowPortLabels	  "FromPortIcon"
-	  SystemSampleTime	  "-1"
-	  GeneratePreprocessorConditionals off
-	  AllowZeroVariantControls off
-	  PropagateVariantConditions off
-	  ContentPreviewEnabled	  on
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "EL3702_bit_to_bar (Piezoventile)2"
+	  Name			  "EL3702_bit_to_bar"
 	  SID			  "1405"
 	  Ports			  [2, 2]
 	  Position		  [610, 474, 755, 561]
 	  ZOrder		  77484
 	  ForegroundColor	  "green"
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/EL3702_bit_to_bar (Piezoventile)"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/EL3702_bit_to_bar"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  GeneratePreprocessorConditionals off
+	  AllowZeroVariantControls off
+	  PropagateVariantConditions off
+	  ContentPreviewEnabled	  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "EL3702_bit_to_bar1"
+	  SID			  "1056"
+	  Ports			  [2, 2]
+	  Position		  [610, 599, 755, 686]
+	  ZOrder		  77467
+	  ForegroundColor	  "green"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/EL3702_bit_to_bar"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  GeneratePreprocessorConditionals off
+	  AllowZeroVariantControls off
+	  PropagateVariantConditions off
+	  ContentPreviewEnabled	  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "EL3702_bit_to_bar2\n"
+	  SID			  "212"
+	  Ports			  [2, 2]
+	  Position		  [610, 734, 755, 821]
+	  ZOrder		  77444
+	  ForegroundColor	  "green"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/EL3702_bit_to_bar"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -7052,19 +7047,19 @@ Model {
 	  SrcBlock		  "EL37x2_0"
 	  SrcPort		  1
 	  Points		  [16, 0; 0, -10]
-	  DstBlock		  "EL3702_bit_to_bar (Piezoventile)"
+	  DstBlock		  "EL3702_bit_to_bar2\n"
 	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  3
-	  SrcBlock		  "EL3702_bit_to_bar (Piezoventile)"
+	  SrcBlock		  "EL3702_bit_to_bar2\n"
 	  SrcPort		  2
 	  DstBlock		  "p32_bar"
 	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  4
-	  SrcBlock		  "EL3702_bit_to_bar (Piezoventile)"
+	  SrcBlock		  "EL3702_bit_to_bar2\n"
 	  SrcPort		  1
 	  DstBlock		  "p31_bar"
 	  DstPort		  1
@@ -7074,7 +7069,7 @@ Model {
 	  SrcBlock		  "EL37x2_0"
 	  SrcPort		  2
 	  Points		  [13, 0; 0, 15]
-	  DstBlock		  "EL3702_bit_to_bar (Piezoventile)"
+	  DstBlock		  "EL3702_bit_to_bar2\n"
 	  DstPort		  2
 	}
 	Line {
@@ -7082,7 +7077,7 @@ Model {
 	  SrcBlock		  "EL37x2_1"
 	  SrcPort		  2
 	  Points		  [9, 0; 0, 15]
-	  DstBlock		  "EL3702_bit_to_bar (Piezoventile)2"
+	  DstBlock		  "EL3702_bit_to_bar"
 	  DstPort		  2
 	}
 	Line {
@@ -7090,12 +7085,12 @@ Model {
 	  SrcBlock		  "EL37x2_1"
 	  SrcPort		  1
 	  Points		  [9, 0; 0, -10]
-	  DstBlock		  "EL3702_bit_to_bar (Piezoventile)2"
+	  DstBlock		  "EL3702_bit_to_bar"
 	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  51
-	  SrcBlock		  "EL3702_bit_to_bar (Piezoventile)1"
+	  SrcBlock		  "EL3702_bit_to_bar1"
 	  SrcPort		  2
 	  DstBlock		  "p22_bar"
 	  DstPort		  1
@@ -7105,7 +7100,7 @@ Model {
 	  SrcBlock		  "EL37x2_2"
 	  SrcPort		  2
 	  Points		  [18, 0; 0, 15]
-	  DstBlock		  "EL3702_bit_to_bar (Piezoventile)1"
+	  DstBlock		  "EL3702_bit_to_bar1"
 	  DstPort		  2
 	}
 	Line {
@@ -7113,91 +7108,91 @@ Model {
 	  SrcBlock		  "EL37x2_2"
 	  SrcPort		  1
 	  Points		  [18, 0; 0, -10]
-	  DstBlock		  "EL3702_bit_to_bar (Piezoventile)1"
+	  DstBlock		  "EL3702_bit_to_bar1"
 	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  50
-	  SrcBlock		  "EL3702_bit_to_bar (Piezoventile)1"
+	  SrcBlock		  "EL3702_bit_to_bar1"
 	  SrcPort		  1
 	  DstBlock		  "p21_bar\n"
 	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  83
-	  SrcBlock		  "EL3702_bit_to_bar (Piezoventile)2"
+	  SrcBlock		  "EL3702_bit_to_bar"
 	  SrcPort		  1
 	  DstBlock		  "p11_bar\n"
 	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  82
-	  SrcBlock		  "EL3702_bit_to_bar (Piezoventile)2"
+	  SrcBlock		  "EL3702_bit_to_bar"
 	  SrcPort		  2
 	  DstBlock		  "p12_bar"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  100
-	  SrcBlock		  "EL3104_bit_to_bar (Piezoventile)"
+	  ZOrder		  122
+	  SrcBlock		  "EL3104_bit_to_bar"
 	  SrcPort		  2
-	  Points		  [255, 0; 0, 15]
 	  DstBlock		  "p42_bar"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  98
-	  SrcBlock		  "EL3104_bit_to_bar (Piezoventile)"
+	  ZOrder		  117
+	  SrcBlock		  "EL3104_bit_to_bar"
 	  SrcPort		  1
+	  Points		  [9, 0; 0, -15]
 	  DstBlock		  "p41_bar"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  102
-	  SrcBlock		  "EL3104_bit_to_bar (Piezoventile)"
+	  ZOrder		  120
+	  SrcBlock		  "EL3104_bit_to_bar"
 	  SrcPort		  4
-	  Points		  [222, 0; 0, 35]
+	  Points		  [9, 0; 0, 20]
 	  DstBlock		  "p52_bar"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  101
-	  SrcBlock		  "EL3104_bit_to_bar (Piezoventile)"
+	  ZOrder		  123
+	  SrcBlock		  "EL3104_bit_to_bar"
 	  SrcPort		  3
-	  Points		  [240, 0; 0, 25]
+	  Points		  [250, 0; 0, 10]
 	  DstBlock		  "p51_bar"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  104
+	  ZOrder		  113
 	  SrcBlock		  "EL31xx_1"
 	  SrcPort		  2
-	  Points		  [45, 0; 0, -25]
-	  DstBlock		  "EL3104_bit_to_bar (Piezoventile)"
+	  Points		  [50, 0; 0, -10]
+	  DstBlock		  "EL3104_bit_to_bar"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  105
+	  ZOrder		  114
 	  SrcBlock		  "EL31xx_1"
 	  SrcPort		  3
-	  Points		  [52, 0; 0, -25]
-	  DstBlock		  "EL3104_bit_to_bar (Piezoventile)"
+	  Points		  [28, 0; 0, -10]
+	  DstBlock		  "EL3104_bit_to_bar"
 	  DstPort		  2
 	}
 	Line {
-	  ZOrder		  106
+	  ZOrder		  115
 	  SrcBlock		  "EL31xx_1"
 	  SrcPort		  4
-	  Points		  [60, 0; 0, -25]
-	  DstBlock		  "EL3104_bit_to_bar (Piezoventile)"
+	  Points		  [64, 0; 0, -10]
+	  DstBlock		  "EL3104_bit_to_bar"
 	  DstPort		  3
 	}
 	Line {
-	  ZOrder		  107
+	  ZOrder		  116
 	  SrcBlock		  "EL31xx_2"
 	  SrcPort		  1
-	  Points		  [78, 0; 0, -70]
-	  DstBlock		  "EL3104_bit_to_bar (Piezoventile)"
+	  Points		  [90, 0]
+	  DstBlock		  "EL3104_bit_to_bar"
 	  DstPort		  4
 	}
 	Line {
@@ -7242,7 +7237,7 @@ Model {
       ContentPreviewEnabled   on
       System {
 	Name			"q_filt"
-	Location		[1992, 27, 3840, 1200]
+	Location		[0, 0, 1920, 1200]
 	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -7314,7 +7309,7 @@ Model {
 	  }
 	  System {
 	    Name		    "TP1_impl"
-	    Location		    [1992, 27, 3840, 1200]
+	    Location		    [0, 0, 1920, 1200]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
@@ -8114,7 +8109,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"80"
+	ZoomFactor		"200"
 	Block {
 	  BlockType		  Inport
 	  Name			  "p_start"
@@ -8381,7 +8376,7 @@ Model {
 	  Ports			  [1, 10]
 	  Position		  [-455, 0, -370, 775]
 	  ZOrder		  100000
-	  LibraryVersion	  "1.81"
+	  LibraryVersion	  "1.82"
 	  SourceBlock		  "test_bench_lib/MATLAB Function"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
@@ -8463,13 +8458,13 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "p_soll2bit"
+	  Name			  "p_des_to_bit"
 	  SID			  "2083"
 	  Ports			  [2, 1]
 	  Position		  [95, 32, 225, 83]
 	  ZOrder		  100000
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/p_soll2bit"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/p_des_to_bit"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -8485,13 +8480,13 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "p_soll2bit1"
+	  Name			  "p_des_to_bit1\n"
 	  SID			  "2084"
 	  Ports			  [2, 1]
 	  Position		  [95, 107, 225, 158]
 	  ZOrder		  100000
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/p_soll2bit"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/p_des_to_bit"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -8507,13 +8502,13 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "p_soll2bit2"
+	  Name			  "p_des_to_bit2"
 	  SID			  "2085"
 	  Ports			  [2, 1]
 	  Position		  [90, 187, 220, 238]
 	  ZOrder		  100000
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/p_soll2bit"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/p_des_to_bit"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -8529,13 +8524,13 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "p_soll2bit3"
+	  Name			  "p_des_to_bit3"
 	  SID			  "2086"
 	  Ports			  [2, 1]
 	  Position		  [90, 257, 220, 308]
 	  ZOrder		  100000
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/p_soll2bit"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/p_des_to_bit"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -8551,13 +8546,13 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "p_soll2bit4"
+	  Name			  "p_des_to_bit4"
 	  SID			  "2087"
 	  Ports			  [2, 1]
 	  Position		  [90, 337, 220, 388]
 	  ZOrder		  100000
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/p_soll2bit"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/p_des_to_bit"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -8573,13 +8568,13 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "p_soll2bit5"
+	  Name			  "p_des_to_bit5"
 	  SID			  "2088"
 	  Ports			  [2, 1]
 	  Position		  [90, 427, 220, 478]
 	  ZOrder		  100000
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/p_soll2bit"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/p_des_to_bit"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -8595,13 +8590,13 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "p_soll2bit6"
+	  Name			  "p_des_to_bit6"
 	  SID			  "2089"
 	  Ports			  [2, 1]
 	  Position		  [90, 512, 220, 563]
 	  ZOrder		  100000
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/p_soll2bit"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/p_des_to_bit"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -8617,13 +8612,13 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "p_soll2bit7"
+	  Name			  "p_des_to_bit7"
 	  SID			  "2090"
 	  Ports			  [2, 1]
 	  Position		  [90, 587, 220, 638]
 	  ZOrder		  100000
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/p_soll2bit"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/p_des_to_bit"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -8639,13 +8634,13 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "p_soll2bit8"
+	  Name			  "p_des_to_bit8"
 	  SID			  "2091"
 	  Ports			  [2, 1]
 	  Position		  [90, 657, 220, 708]
 	  ZOrder		  100000
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/p_soll2bit"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/p_des_to_bit"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -8661,13 +8656,13 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "p_soll2bit9"
+	  Name			  "p_des_to_bit9"
 	  SID			  "2092"
 	  Ports			  [2, 1]
 	  Position		  [90, 732, 220, 783]
 	  ZOrder		  100000
-	  LibraryVersion	  "1.81"
-	  SourceBlock		  "test_bench_lib/p_soll2bit"
+	  LibraryVersion	  "1.82"
+	  SourceBlock		  "test_bench_lib/p_des_to_bit"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
@@ -8685,14 +8680,14 @@ Model {
 	  ZOrder		  7613
 	  SrcBlock		  "From19"
 	  SrcPort		  1
-	  DstBlock		  "p_soll2bit3"
+	  DstBlock		  "p_des_to_bit3"
 	  DstPort		  2
 	}
 	Line {
 	  Name			  "p52"
 	  ZOrder		  7596
 	  Labels		  [1, 0]
-	  SrcBlock		  "p_soll2bit9"
+	  SrcBlock		  "p_des_to_bit9"
 	  SrcPort		  1
 	  DstBlock		  "EL4xxx_1"
 	  DstPort		  2
@@ -8701,7 +8696,7 @@ Model {
 	  Name			  "p42"
 	  ZOrder		  7594
 	  Labels		  [1, 0]
-	  SrcBlock		  "p_soll2bit7"
+	  SrcBlock		  "p_des_to_bit7"
 	  SrcPort		  1
 	  Points		  [260, 0; 0, -65]
 	  DstBlock		  "EL4xxx_0"
@@ -8711,7 +8706,7 @@ Model {
 	  Name			  "p32"
 	  ZOrder		  7592
 	  Labels		  [3, 0]
-	  SrcBlock		  "p_soll2bit5"
+	  SrcBlock		  "p_des_to_bit5"
 	  SrcPort		  1
 	  Points		  [260, 0; 0, -45]
 	  DstBlock		  "EL4xxx_0"
@@ -8721,21 +8716,21 @@ Model {
 	  ZOrder		  7597
 	  SrcBlock		  "From4"
 	  SrcPort		  1
-	  DstBlock		  "p_soll2bit9"
+	  DstBlock		  "p_des_to_bit9"
 	  DstPort		  2
 	}
 	Line {
 	  ZOrder		  7610
 	  SrcBlock		  "From76"
 	  SrcPort		  1
-	  DstBlock		  "p_soll2bit6"
+	  DstBlock		  "p_des_to_bit6"
 	  DstPort		  2
 	}
 	Line {
 	  Name			  "p41"
 	  ZOrder		  7593
 	  Labels		  [-1, 1]
-	  SrcBlock		  "p_soll2bit6"
+	  SrcBlock		  "p_des_to_bit6"
 	  SrcPort		  1
 	  Points		  [260, 0; 0, -60]
 	  DstBlock		  "EL4xxx_0"
@@ -8745,14 +8740,14 @@ Model {
 	  ZOrder		  7608
 	  SrcBlock		  "From93"
 	  SrcPort		  1
-	  DstBlock		  "p_soll2bit8"
+	  DstBlock		  "p_des_to_bit8"
 	  DstPort		  2
 	}
 	Line {
 	  Name			  "p51"
 	  ZOrder		  7595
 	  Labels		  [3, 0]
-	  SrcBlock		  "p_soll2bit8"
+	  SrcBlock		  "p_des_to_bit8"
 	  SrcPort		  1
 	  Points		  [9, 0; 0, 5]
 	  DstBlock		  "EL4xxx_1"
@@ -8762,14 +8757,14 @@ Model {
 	  ZOrder		  7614
 	  SrcBlock		  "From18"
 	  SrcPort		  1
-	  DstBlock		  "p_soll2bit2"
+	  DstBlock		  "p_des_to_bit2"
 	  DstPort		  2
 	}
 	Line {
 	  Name			  "p31"
 	  ZOrder		  7591
 	  Labels		  [3, 0]
-	  SrcBlock		  "p_soll2bit4"
+	  SrcBlock		  "p_des_to_bit4"
 	  SrcPort		  1
 	  Points		  [9, 0; 0, -25]
 	  DstBlock		  "EL4xxx_0"
@@ -8779,7 +8774,7 @@ Model {
 	  Name			  "p22"
 	  ZOrder		  7590
 	  Labels		  [3, 0]
-	  SrcBlock		  "p_soll2bit3"
+	  SrcBlock		  "p_des_to_bit3"
 	  SrcPort		  1
 	  Points		  [140, 0; 0, -15]
 	  DstBlock		  "EL4xxx_0"
@@ -8797,14 +8792,14 @@ Model {
 	  ZOrder		  7615
 	  SrcBlock		  "From16"
 	  SrcPort		  1
-	  DstBlock		  "p_soll2bit1"
+	  DstBlock		  "p_des_to_bit1\n"
 	  DstPort		  2
 	}
 	Line {
 	  Name			  "p11"
 	  ZOrder		  7587
 	  Labels		  [1, 0]
-	  SrcBlock		  "p_soll2bit"
+	  SrcBlock		  "p_des_to_bit"
 	  SrcPort		  1
 	  DstBlock		  "EL4xxx_0"
 	  DstPort		  1
@@ -8821,7 +8816,7 @@ Model {
 	  Name			  "p12"
 	  ZOrder		  7588
 	  Labels		  [2, 0]
-	  SrcBlock		  "p_soll2bit1"
+	  SrcBlock		  "p_des_to_bit1\n"
 	  SrcPort		  1
 	  Points		  [253, 0; 0, -5]
 	  DstBlock		  "EL4xxx_0"
@@ -8831,7 +8826,7 @@ Model {
 	  Name			  "p21"
 	  ZOrder		  7589
 	  Labels		  [2, 1]
-	  SrcBlock		  "p_soll2bit2"
+	  SrcBlock		  "p_des_to_bit2"
 	  SrcPort		  1
 	  Points		  [255, 0; 0, -15]
 	  DstBlock		  "EL4xxx_0"
@@ -8841,7 +8836,7 @@ Model {
 	  ZOrder		  7609
 	  SrcBlock		  "From92"
 	  SrcPort		  1
-	  DstBlock		  "p_soll2bit7"
+	  DstBlock		  "p_des_to_bit7"
 	  DstPort		  2
 	}
 	Line {
@@ -8863,7 +8858,7 @@ Model {
 	  ZOrder		  7612
 	  SrcBlock		  "From20"
 	  SrcPort		  1
-	  DstBlock		  "p_soll2bit4"
+	  DstBlock		  "p_des_to_bit4"
 	  DstPort		  2
 	}
 	Line {
@@ -8878,14 +8873,14 @@ Model {
 	  ZOrder		  7611
 	  SrcBlock		  "From21"
 	  SrcPort		  1
-	  DstBlock		  "p_soll2bit5"
+	  DstBlock		  "p_des_to_bit5"
 	  DstPort		  2
 	}
 	Line {
 	  ZOrder		  7616
 	  SrcBlock		  "From6"
 	  SrcPort		  1
-	  DstBlock		  "p_soll2bit"
+	  DstBlock		  "p_des_to_bit"
 	  DstPort		  2
 	}
 	Line {
@@ -8948,7 +8943,7 @@ Model {
 	  SrcBlock		  "Manual Switch37"
 	  SrcPort		  1
 	  Points		  [105, 0; 0, -5]
-	  DstBlock		  "p_soll2bit"
+	  DstBlock		  "p_des_to_bit"
 	  DstPort		  1
 	}
 	Line {
@@ -8956,7 +8951,7 @@ Model {
 	  SrcBlock		  "Manual Switch1"
 	  SrcPort		  1
 	  Points		  [105, 0; 0, -5]
-	  DstBlock		  "p_soll2bit1"
+	  DstBlock		  "p_des_to_bit1\n"
 	  DstPort		  1
 	}
 	Line {
@@ -8964,7 +8959,7 @@ Model {
 	  SrcBlock		  "Manual Switch2"
 	  SrcPort		  1
 	  Points		  [102, 0; 0, -5]
-	  DstBlock		  "p_soll2bit2"
+	  DstBlock		  "p_des_to_bit2"
 	  DstPort		  1
 	}
 	Line {
@@ -8972,7 +8967,7 @@ Model {
 	  SrcBlock		  "Manual Switch3"
 	  SrcPort		  1
 	  Points		  [102, 0; 0, -5]
-	  DstBlock		  "p_soll2bit3"
+	  DstBlock		  "p_des_to_bit3"
 	  DstPort		  1
 	}
 	Line {
@@ -8980,7 +8975,7 @@ Model {
 	  SrcBlock		  "Manual Switch4"
 	  SrcPort		  1
 	  Points		  [102, 0; 0, -5]
-	  DstBlock		  "p_soll2bit4"
+	  DstBlock		  "p_des_to_bit4"
 	  DstPort		  1
 	}
 	Line {
@@ -8988,7 +8983,7 @@ Model {
 	  SrcBlock		  "Manual Switch5"
 	  SrcPort		  1
 	  Points		  [97, 0; 0, -5]
-	  DstBlock		  "p_soll2bit5"
+	  DstBlock		  "p_des_to_bit5"
 	  DstPort		  1
 	}
 	Line {
@@ -8996,7 +8991,7 @@ Model {
 	  SrcBlock		  "Manual Switch6"
 	  SrcPort		  1
 	  Points		  [97, 0; 0, -5]
-	  DstBlock		  "p_soll2bit6"
+	  DstBlock		  "p_des_to_bit6"
 	  DstPort		  1
 	}
 	Line {
@@ -9004,7 +8999,7 @@ Model {
 	  SrcBlock		  "Manual Switch7"
 	  SrcPort		  1
 	  Points		  [97, 0; 0, -5]
-	  DstBlock		  "p_soll2bit7"
+	  DstBlock		  "p_des_to_bit7"
 	  DstPort		  1
 	}
 	Line {
@@ -9012,7 +9007,7 @@ Model {
 	  SrcBlock		  "Manual Switch8"
 	  SrcPort		  1
 	  Points		  [97, 0; 0, -5]
-	  DstBlock		  "p_soll2bit8"
+	  DstBlock		  "p_des_to_bit8"
 	  DstPort		  1
 	}
 	Line {
@@ -9092,7 +9087,7 @@ Model {
 	  SrcBlock		  "Manual Switch9"
 	  SrcPort		  1
 	  Points		  [97, 0; 0, -5]
-	  DstBlock		  "p_soll2bit9"
+	  DstBlock		  "p_des_to_bit9"
 	  DstPort		  1
 	}
       }
@@ -10430,9 +10425,6 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 11 0 0]
     viewObj		    10
-    visible		    1
-    subviewS {
-    }
     ssIdHighWaterMark	    6
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -10582,9 +10574,6 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 19 0 0]
     viewObj		    18
-    visible		    1
-    subviewS {
-    }
     ssIdHighWaterMark	    9
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -10757,9 +10746,6 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 28 0 0]
     viewObj		    27
-    visible		    1
-    subviewS {
-    }
     ssIdHighWaterMark	    8
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -11205,9 +11191,6 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 52 0 0]
     viewObj		    51
-    visible		    1
-    subviewS {
-    }
     ssIdHighWaterMark	    9
     decomposition	    CLUSTER_CHART
     type		    EML_CHART

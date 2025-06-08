@@ -9,10 +9,10 @@ t_sample_s=1e-3; % sample time
 f_tp_Hz = 1; % low-pass freq
 p_max_bar = 0.7; % max pressure
 offset_q_offline = [266.1,185.3,200.5,240.7,168.1]; % encoder calibration
-pi_flag=1; % pi control
+pi_flag=0; % pi control
 P_gain=[4,6,11,11,10]*1e-2*1;
 I_gain=[4,4,8,6,11]*1e-2*1;
-mpc_flag=0; % MPC
+mpc_flag=1; % MPC
 % desired trajectory
 qmax_deg=18;
 n_ramps=45;

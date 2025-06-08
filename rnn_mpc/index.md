@@ -1,5 +1,5 @@
 ---
-title: Learning-based MPC
+title: MPC with RNNs
 nav_order: 5
 ---
 
@@ -8,20 +8,18 @@ nav_order: 5
 <img src="images/../../images/mpc_cover.png" width=600>
 </p>
 
-This page describes the implementation of a learning-based nonlinear model predictive control (NMPC) using recurrent neural networks (RNNs), which is experimentally validated with SPONGE. The RNNs are trained in PyTorch, and their hyperparameters are optimized via ASHA. They are then integrated into Simulink and used as models within NMPC. For this purpose, CasADi is integrated into Simulink as an S-function, enabling its use on a real-time computer. The code is based on the [test-bench code](https://tlhabich.github.io/sponge/test_bench/). It is therefore recommended that you familiarize yourself with this code. The hardware setup remains the same - only the software components are added.
+This page describes the implementation of a learning-based nonlinear model predictive control (NMPC) using recurrent neural networks (RNNs), which is experimentally validated with SPONGE. The RNNs are trained in PyTorch, and their hyperparameters are optimized via ASHA. One RNN is then integrated into Simulink and used as model within NMPC. For this purpose, CasADi is integrated into Simulink as an S-function, enabling its use on a real-time computer. The code is based on the [originally test-bench software](https://tlhabich.github.io/sponge/test_bench/). It is therefore recommended that you familiarize yourself with this software.
 
-**The code for neural-network training, hyperparameter optimization and learning-based NMPC with RNNs can be found in the [git repository](https://github.com/tlhabich/sponge/tree/main/rnn_mpc/software).**
+**The code for RNN training, hyperparameter optimization and learning-based NMPC with RNNs can be found in the [git repository](https://github.com/tlhabich/sponge/tree/main/rnn_mpc/software).**
 
 ## Additional Requirements
-- [CasaDI v3.6.6](https://web.casadi.org/get/) installed as a source build
-- [IPOPT](https://coin-or.github.io/Ipopt/INSTALL.html)
+- [CasADi](https://github.com/casadi/casadi/wiki/InstallationLinux) installed as a source build with IPOPT solver
 - [yaml-cpp v0.6.0](https://github.com/jbeder/yaml-cpp)
-- [CMake 3.30.3](https://cmake.org/download/)
 - [YAMLMatlab_0.4.3](https://github.com/ewiger/yamlmatlab)
 
 ## Usage
-1. Set up the test bench following these [instructions](https://tlhabich.github.io/sponge/test_bench/).
-2. Dev-PC: Copy all files from this repository to the test-bench folder. Overwrite any files with duplicate names.
+1. Set up the test bench following these [instructions](https://tlhabich.github.io/sponge/test_bench/)
+2. Dev-PC: Copy all files from this repository to the test-bench folder. Overwrite any files with duplicate names
 3. Dev-PC: Compile the shared library by running ``$ ./build.sh 1``
 4. Dev-PC: Initialize parameters and open Simulink model via ``init.m``
 5. Dev-PC: If necessary, modify Simulink model

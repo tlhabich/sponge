@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-DD-PINN/PINC or RNN: training (standalone or HPO)
+DD-PINN/PINC or black-box model (FNN and RNN): training (standalone or hyperparameter optimization)
 @author: TLH
 """
 import os

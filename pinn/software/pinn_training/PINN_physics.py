@@ -8,15 +8,8 @@ import numpy as np
 import copy
 import matplotlib.pyplot as plt
 import torch
-from pathlib import Path
 from scipy.optimize import fsolve
 import sys
-import scipy
-import matplotlib.pyplot as plt
-from matplotlib.path import Path as matPath
-from matplotlib.ticker import MaxNLocator
-import matplotlib.patches as patches
-from sklearn.metrics import mean_absolute_error
 
 # plot options
 csfont = {'fontname':'Times New Roman'}

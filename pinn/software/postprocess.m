@@ -16,11 +16,11 @@ for i = 0:10000
   end
 end
 if I == -1
-  error('Keine Messwertdateien mit Namensschema gefunden');
+  error('No data found');
 end
 for i = 1:length(matdatlist)
   dateiname_neu = sprintf('measurement_data_%d.mat', I+i-1);
-  fprintf('Lese Datei %d/%d: %s.\n', i,length(matdatlist), dateiname_neu);
+  fprintf('Read file %d/%d: %s.\n', i,length(matdatlist), dateiname_neu);
   matdatpath = fullfile(resdir, dateiname_neu);
   tmp = load(matdatpath);
   sl_signal = simulink_signal2struct(tmp.ScopeData1);

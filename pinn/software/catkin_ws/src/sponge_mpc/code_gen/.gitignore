@@ -1,0 +1,6 @@
+nlp_grad_f.c
+nlp_grad_f.h
+nlp_grad_f.so
+nlp_jac_g.c
+nlp_jac_g.h
+nlp_jac_g.so

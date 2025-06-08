@@ -17,15 +17,15 @@ This page describes the implementation of a learning-based nonlinear model predi
 - [json.hpp](https://github.com/nlohmann/json) copied to [include folder](https://github.com/tlhabich/sponge/tree/main/pinn_mpc/software/catkin_ws/src/sponge_mpc/include)
 
 ## Usage
-1. Set up the test bench following these [instructions](https://tlhabich.github.io/sponge/test_bench/) The ROS-interface is used, which is explained [here](https://github.com/SchapplM/etherlab-examples)
+1. Set up the test bench following these [instructions](https://tlhabich.github.io/sponge/test_bench/). The ROS-interface is used, which is explained [here](https://github.com/SchapplM/etherlab-examples)
 2. Dev-PC: Initialize parameters and open Simulink model via ``init.m``
 3. Dev-PC: If necessary, modify Simulink model
-4. Dev-PC: Compile the model by pressing ``Ctrl+B``
+4. Dev-PC: Compile the model by pressing ``Ctrl+b``
 5. Dev-PC: Compile ROS-Workspace and copy to RT-PC via ``$ ./build.sh && ./sync.sh``
 6. Connect to RT-PC via SSH and run the following commands on RT-PC: ``$ sudo /etc/init.d/ethercat start`` (start EtherCAT master) and ``$ ~/app_interface/ros_install/scripts/autostart.sh && tmux attach-session -t app`` (start compiled model)
-7. Dev-PC: Start external mode in Simulink model via ``Connect To Target`` to visualize/record data or alter settings (such as starting the controller)
-8. Dev-PC: Start PINN-based MPC via ``roslaunch sponge_mpc sponge_mpc.launch``
-9. After the experiment on RT-PC: ``Ctrl+C`` in tmux windows, ``$ tmux kill-session -t app`` and ``$ sudo /etc/init.d/ethercat stop`` to stop the EtherCAT master
+7. Dev-PC: Launch ROS service for PINN-based MPC via ``roslaunch sponge_mpc sponge_mpc.launch``
+8. Dev-PC: Start external mode in Simulink model via ``Connect To Target`` to visualize/record data or alter settings (such as starting the MPC experiment)
+9. After the experiment on RT-PC: ``Ctrl+c`` in tmux window, ``$ tmux kill-session -t app`` and ``$ sudo /etc/init.d/ethercat stop`` to stop the EtherCAT master
 
 ## Citing
 The paper is [freely available](https://arxiv.org/abs/2502.01916) via arXiv. If you use parts of this project for your research, please cite the following publication:

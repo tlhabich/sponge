@@ -27,7 +27,7 @@ This page describes the implementation of a learning-based nonlinear model predi
 7. Dev-PC: Compile ROS-Workspace and copy to RT-PC via ``$ ./build.sh && ./sync.sh``
 8. Connect to RT-PC via SSH and run the following commands on RT-PC: ``$ sudo /etc/init.d/ethercat start`` (start EtherCAT master) and ``$ ~/app_interface/ros_install/scripts/autostart.sh && tmux attach-session -t app`` (start compiled model)
 9. Dev-PC: Start external mode in Simulink model via ``Connect To Target`` to visualize/record data or alter settings
-10. After the experiment on RT-PC: ``Ctrl+C`` in tmux windows, ``$ tmux kill-session`` and ``$ sudo /etc/init.d/ethercat stop`` to stop the EtherCAT master
+10. After the experiment on RT-PC: ``Ctrl+c`` in tmux window, ``$ tmux kill-session`` and ``$ sudo /etc/init.d/ethercat stop`` to stop the EtherCAT master
 
 ## Citing
 The paper is [freely available](https://arxiv.org/abs/2411.05616) via arXiv. If you use parts of this project for your research, please cite the following publication:

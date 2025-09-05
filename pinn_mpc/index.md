@@ -1,6 +1,6 @@
 ---
 title: MPC with PINNs
-nav_order: 5
+nav_order: 6
 ---
 
 # Physics-Informed Neural Networks for Learning and Control

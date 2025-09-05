@@ -11,7 +11,7 @@ The actuator has a diameter of 82mm and a total height of 52mm. The sensor signa
 
 * 3D models
    * [Files for 3D-Printer (.stl)](/sponge/downloads/SPONGE_SemiModular_stl.zip)
-   * [CAD-Files created with Autodesk Inventor (.ipt,.iam)](/sponge/downloads/SPONGE_SemiModular_CAD_inventor.zip)
+   * [CAD-Files (.stp)](/sponge/downloads/SPONGE_SemiModular_step.zip)
 
 ## Details
 
@@ -23,7 +23,7 @@ The actuator has a diameter of 82mm and a total height of 52mm. The sensor signa
 Further design improvements were made after the [RA-L publication](https://arxiv.org/abs/2404.10734). The above instructions are still valid, taking into account the new parts. The changes are listed in detail below. The new files are also available.
 ### V2
 Summary: joint-friction reduction, less plastic deformation of the frames, thicker bellows for higher pressures, larger tube diameters for improved pressure dynamics
-* [Updated files (.stl, .ipt, .iam)](/sponge/downloads/SPONGE_SemiModular_V2.zip)
+* [Updated files (.stl, .stp)](/sponge/downloads/SPONGE_SemiModular_V2.zip)
 * Upper frame
   * Shaft diameter decreased to reduce friction
   * Reinforced shaft holders to prevent deformation

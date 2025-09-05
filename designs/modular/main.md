@@ -11,7 +11,7 @@ The actuator has a diameter of 66 mm and a total height of 94 mm. A PCB reads th
 
 * 3D models
    * [Files for 3D-Printer (.stl)](/sponge/downloads/SPONGE_Modular_stl.zip)
-   * [CAD-Files created with Autodesk Inventor (.ipt,.iam)](/sponge/downloads/SPONGE_Modular_CAD_inventor.zip)
+   * [CAD-Files (.stp)](/sponge/downloads/SPONGE_Modular_step.zip)
 * PCB
   * [Gerber Files (.zip)](/sponge/downloads/SPONGE_PCB_Gerber.zip)
   * [Fusion360 files (.f3z,.sch,.brd)](/sponge/downloads/SPONGE_PCB_F360.zip)

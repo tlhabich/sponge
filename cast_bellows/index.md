@@ -13,11 +13,11 @@ The 3D-printed soft bellows are problematic for long-term use: the material ages
 
 * 3D models (semi-modular bellows)
    * [Files for 3D-Printer (.stl)](/sponge/downloads/SPONGE_SemiModular_SiliconeBellow_stl.zip)
-   * [CAD-Files created with Autodesk Inventor (.ipt,.iam)](/sponge/downloads/SPONGE_SemiModular_SiliconeBellow_CAD_inventor.zip)
+   * [CAD-Files (.stp)](/sponge/downloads/SPONGE_SemiModular_SiliconeBellow_step.zip)
 
 * 3D models (modular bellows)
   * [Files for 3D-Printer (.stl)](/sponge/downloads/SPONGE_Modular_SiliconeBellow_stl.zip)
-  * [CAD-Files created with Autodesk Inventor (.ipt,.iam)](/sponge/downloads/SPONGE_Modular_SiliconeBellow_CAD_inventor.zip)
+  * [CAD-Files (.stp)](/sponge/downloads/SPONGE_Modular_SiliconeBellow_step.zip)
 
 ## Components
 

@@ -5,9 +5,9 @@ pinn_name: "final_PINN" #name of the pinn within MPC
 N: 3 #prediction horizon
 N_u: 1 #control horizon
 Q_pos: 0.7 #gain PosStageCost 
-Q_pos_terminal: 0.7 #gain TerminalCost 
-Qd_pos: 0.01 #gain VelStageCost 
-Qd_pos_terminal: 0.01 #gain VelTerminalCost
+Q_pos_terminal: 0.7 #gain PosTerminalCost 
+Q_vel: 0.01 #gain VelStageCost 
+Q_vel_terminal: 0.01 #gain VelTerminalCost
 R_p: 0.01 #gain InputStageCost 
 p_max_bar: 0.7 #maximum bellows pressure for saturation (MPC constraint)
 addPosStageCost: true

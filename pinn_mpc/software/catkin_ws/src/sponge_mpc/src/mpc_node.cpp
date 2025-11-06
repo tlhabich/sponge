@@ -24,8 +24,8 @@ public:
         nh.getParam("/p_max_bar",p_max_bar_saturation);
         nh.getParam("/Q_pos",Q_pos);
         nh.getParam("/Q_pos_terminal",Q_pos_terminal);
-        nh.getParam("/Qd_pos",Qd_pos);
-        nh.getParam("/Qd_pos_terminal",Qd_pos_terminal);
+        nh.getParam("/Q_vel",Q_vel);
+        nh.getParam("/Q_vel_terminal",Q_vel_terminal);
         nh.getParam("/R_p",R_p);
         nh.getParam("/beta_test_deg",beta_test_deg);
         nh.getParam("/mE_test_g",mE_test_g);
@@ -155,11 +155,11 @@ public:
                 }        
                 if (addVelStageCost && k<N-1){
                     qd_cost =  X_K_next_(Slice(n_akt,2*n_akt)) - XD_GOAL_(all,k);
-                    costFunction_ += MX::mtimes(MX::mtimes(qd_cost.T(),vel_weighting*Qd_pos),qd_cost);
+                    costFunction_ += MX::mtimes(MX::mtimes(qd_cost.T(),vel_weighting*Q_vel),qd_cost);
                 }
                 if (addVelTerminalCost && k==N-1){
                     qd_cost_terminal = X_K_next_(Slice(n_akt,2*n_akt)) - XD_GOAL_(all,k);
-                    costFunction_ += mtimes(mtimes(qd_cost_terminal.T(),vel_weighting*Qd_pos_terminal),qd_cost_terminal);
+                    costFunction_ += mtimes(mtimes(qd_cost_terminal.T(),vel_weighting*Q_vel_terminal),qd_cost_terminal);
                 }
                 if (addInputStageCost && k<N_u){
                     u_cost = U_(all,k);
@@ -262,11 +262,11 @@ public:
             
             if (addVelStageCost && k<N-1){
                     qd_cost =  X_K_next_(Slice(n_akt,2*n_akt)) - XD_GOAL_(all,k);
-                    costFunction_ += MX::mtimes(MX::mtimes(qd_cost.T(),vel_weighting*Qd_pos),qd_cost);
+                    costFunction_ += MX::mtimes(MX::mtimes(qd_cost.T(),vel_weighting*Q_vel),qd_cost);
                 }
             if (addVelTerminalCost && k==N-1){
                 qd_cost_terminal = X_K_next_(Slice(n_akt,2*n_akt)) - XD_GOAL_(all,k);
-                costFunction_ += mtimes(mtimes(qd_cost_terminal.T(),vel_weighting*Qd_pos_terminal),qd_cost_terminal);
+                costFunction_ += mtimes(mtimes(qd_cost_terminal.T(),vel_weighting*Q_vel_terminal),qd_cost_terminal);
             }
             
             if (addInputStageCost && k<N_u){
@@ -378,7 +378,7 @@ private:
     ros::NodeHandle nh;
     ros::ServiceServer service;
     int N,N_u,n_neurons,n_hidden,input_dim,output_dim,factor_downsampling,n_akt,udim,xdim,ddpinn_props_n_ansatz,xdim_ansatz,data_horizon;
-    double p_max_bar_saturation,p_max_Pa,Q_pos,Qd_pos,Qd_pos_terminal,Q_pos_terminal,R_p,beta_test_deg,mE_test_g,mE_test_kg,t_sample_scaled,
+    double p_max_bar_saturation,p_max_Pa,Q_pos,Q_vel,Q_vel_terminal,Q_pos_terminal,R_p,beta_test_deg,mE_test_g,mE_test_kg,t_sample_scaled,
     lr_init,betamax,betamin,mEmax,mEmin,pmax,qmax,qdmax,t_sample,T,beta_test_scaled,mE_test_scaled,pmax_scaled,pmin_scaled,qmax_scaled,qdmax_scaled;
     bool addPosStageCost,addInputStageCost,addPosTerminalCost,addVelTerminalCost,addVelStageCost,ddpinn_flag,multiple_shooting_flag;
     string ddpinn_props_ansatz;

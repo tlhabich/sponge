@@ -1,0 +1,5 @@
+<launch>
+  <rosparam file="$(find sponge_mpc)/cfg/mpc_params.yaml" command="load" />
+    <node name="mpc_step_service" pkg="sponge_mpc" type="mpc_node" output="screen" respawn="true">
+    </node>
+</launch>

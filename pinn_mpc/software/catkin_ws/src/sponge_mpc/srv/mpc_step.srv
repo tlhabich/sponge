@@ -1,0 +1,6 @@
+float64[] q_deg #current joint positions
+float64[] qd_degs #current joint velocities
+float64[] q_des_deg #desired path within prediction horizon
+float64[] qd_des_degs #desired velocity within prediction horizon
+---
+float64[] p_des_bar #desired pressures (MPC result)

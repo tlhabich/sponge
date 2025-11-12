@@ -35,4 +35,4 @@ DOI: 10.1109/LRA.2024.3388855
 - [Physics-Informed Neural Networks for Learning and Control (under review)](https://arxiv.org/abs/2502.01916)
 
 ## Authors
-SPONGE is part of the PhD thesis of [Tim-Lukas Habich](https://www.imes.uni-hannover.de/en/institute/team/m-sc-tim-lukas-habich) (Email: <tim-lukas.habich@imes.uni-hannover.de>) and was developed with support from colleagues (Moritz Schappler, Dustin Lehmann, Thomas Seel, Dennis Bank) and supervised students (Jonas Haack, Mehdi Belhadj, Sarah Kleinjohann, Jan Christoph Haupt).
+SPONGE is part of the PhD thesis of [Tim-Lukas Habich](https://www.linkedin.com/in/tlhabich/) and was developed with support from colleagues (Moritz Schappler, Dustin Lehmann, Thomas Seel, Dennis Bank) and supervised students (Jonas Haack, Mehdi Belhadj, Sarah Kleinjohann, Jan Christoph Haupt).

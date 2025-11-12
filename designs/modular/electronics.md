@@ -66,7 +66,7 @@ The power supply is connected using two 3x1 socket strips: one on the bottom sid
 
 ## Manufacturing
 
-The [Gerber Files](/sponge/downloads/SPONGE_Modular_PCB_Gerber.zip) can be directly sent to a PCB manufacturer. After that, we soldered the components onto the board ourselves.
+The [Gerber files](/sponge/downloads/SPONGE_Modular_PCB_Gerber.zip) can be directly sent to a PCB manufacturer. After that, we soldered the components onto the board ourselves.
 ## Software
 The [software](https://github.com/tlhabich/sponge/tree/main/test_bench/software/modular_robot_i2c) consists of operation code for the PCB and the I2C controller. The I2C controller (STM32-Nucleo Board with an EasyCAT shield) receives commands from the [test bench](https://tlhabich.github.io/sponge/test_bench/) via EtherCAT and sends back the measured sensor signals. The code is developed with the [Arduino IDE](https://www.arduino.cc/). Because the library for the EasyCAT shield is only available for Arduino or [Mbed](https://os.mbed.com/) (online ARM-processer IDE), the Arduino IDE is required to compile the code. Remember to install the following libraries: [EasyCAT](https://www.bausano.net/en/hardware/easycat.html) and [elapsedMillis](https://www.arduino.cc/reference/en/libraries/elapsedmillis/).
 

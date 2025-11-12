@@ -53,7 +53,7 @@ The Hall encoder is connected to the interface using a 3x1 Molex PicoBlade conne
 \**Only the M-sides are required. Cables are cut in half and soldered to the Molex 5x1 cable M-M.
 
 ## Manufacturing
-The [Gerber Files](/sponge/downloads/SPONGE_SemiModular_PCB_Gerber.zip) can be directly sent to a PCB manufacturer. After that, we soldered the components onto the board ourselves.
+The [Gerber files](/sponge/downloads/SPONGE_SemiModular_PCB_Gerber.zip) can be directly sent to a PCB manufacturer. After that, we soldered the components onto the board ourselves.
 ## Software
 Please refer to the [software section of the modular PCB](https://tlhabich.github.io/sponge/designs/modular/electronics.html). All necessary files for extending the [existing test-bench software](https://github.com/tlhabich/sponge/tree/main/test_bench/software) can be found in this [folder](https://github.com/tlhabich/sponge/tree/main/test_bench/software/semimodular_robot_i2c). In order to use the semi-modular robot with the optional PCB, the following steps are required:
 - Add [encoder_block.mdl](https://github.com/tlhabich/sponge/tree/main/test_bench/software/semimodular_robot_i2c/) to your [test_bench_sponge.mdl](https://github.com/tlhabich/sponge/tree/main/test_bench/software)

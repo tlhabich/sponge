@@ -14,7 +14,7 @@ The actuator has a diameter of 82mm and a total height of 52mm. The sensor signa
    * [CAD-Files (.stp)](/sponge/downloads/SPONGE_SemiModular_step.zip)
 * PCB
    * [Gerber Files (.zip)](/sponge/downloads/SPONGE_SemiModular_PCB_Gerber.zip)
-   * [Code](https://github.com/tlhabich/sponge/tree/main/test_bench/software/modular_robot_i2c)
+   * [Code](https://github.com/tlhabich/sponge/tree/main/test_bench/software/semimodular_robot_i2c)
 
 ## Details
 

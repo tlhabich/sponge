@@ -32,5 +32,6 @@ The paper is [freely available](https://arxiv.org/abs/2502.01916) via arXiv. If 
 ```
 Generalizable and Fast Surrogates: Model Predictive Control of Articulated Soft Robots using Physics-Informed Neural Networks
 T.-L. Habich, A. Mohammad, S. F. G. Ehlers, M. Bensch, T. Seel, and M. Schappler
-Currently under review
+IEEE Transactions on Robotics (T-RO) 2025
+DOI: 10.1109/TRO.2025.3631818
 ```

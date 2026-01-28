@@ -6,7 +6,7 @@ nav_order: 2
 ---
 
 # Electronics (optional)
-The optional PCB (mounted opposite each encoder in the joint) handles the modular communication of the encoders with the [test bench](https://tlhabich.github.io/sponge/test_bench/) via I2C. It comprises an AD-Converter (ADC) ADS122C04 to convert the analogue output of each encoder into a digital signal. Each PCB is configured as an I2C target (slave). As the I2C controller (master) serves a NUCLEO-F401RE development board, that is located outside the robot. Attached to it is a Bausano EasyCAT-shield that enables a connection from the NUCLEO board to the EtherCAT bus for communication with the test bench.
+The optional PCB (mounted opposite each encoder in the joint) handles the modular communication of the encoders with the [test bench](https://tlhabich.github.io/sponge/test_bench/) via I2C. It comprises an AD-Converter (ADC) ADS122C04 to convert the analogue output of each encoder into a digital signal. Each ADC is configured as an I2C target (slave). As the I2C controller (master) serves a NUCLEO-F401RE development board, that is located outside the robot. Attached to it is a Bausano EasyCAT-shield that enables a connection from the NUCLEO board to the EtherCAT bus for communication with the test bench.
 
 <p align="center">
   <img src="images/../../../images/PCB_semi_modular.png" width=600>

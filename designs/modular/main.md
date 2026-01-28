@@ -20,4 +20,4 @@ The actuator has a diameter of 66 mm and a total height of 94 mm. A PCB reads th
 
 |Building Instructions|Electronics|
 |:----:|:----:|
-|[<img src="images/../../../images/modular_sponge_explosion.png" width=200>](https://tlhabich.github.io/sponge/designs/modular/instructions.html)|[<img src="images/../../../images/circuit_diagram_modular.png" width = 200>](https://tlhabich.github.io/sponge/designs/modular/electronics.html)|
+|[<img src="images/../../../images/modular_sponge_explosion.png" width=200>](https://tlhabich.github.io/sponge/designs/modular/instructions.html)|[<img src="images/../../../images/circuit_diagram_modular.png" width = 500>](https://tlhabich.github.io/sponge/designs/modular/electronics.html)|

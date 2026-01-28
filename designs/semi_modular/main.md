@@ -20,7 +20,7 @@ The actuator has a diameter of 82mm and a total height of 52mm. The sensor signa
 
 |Building Instructions|Electronics (optional)|
 |:----:|:----:|
-|[<img src="images/../../../images/semi_modular_sponge_explosion.png" width=200>](https://tlhabich.github.io/sponge/designs/semi_modular/instructions.html)|[<img src="images/../../../images/circuit_diagram_semi_modular.png" width = 200>](https://tlhabich.github.io/sponge/designs/semi_modular/electronics.html)|
+|[<img src="images/../../../images/semi_modular_sponge_explosion.png" width=200>](https://tlhabich.github.io/sponge/designs/semi_modular/instructions.html)|[<img src="images/../../../images/circuit_diagram_semi_modular.png" width = 500>](https://tlhabich.github.io/sponge/designs/semi_modular/electronics.html)|
 
 ## Improvements after Publication
 Further design improvements were made after the [RA-L publication](https://arxiv.org/abs/2404.10734). The above instructions are still valid, taking into account the new parts. The changes are listed in detail below. The new files are also available.

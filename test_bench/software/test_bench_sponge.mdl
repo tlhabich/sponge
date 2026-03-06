@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.3"
+    ComputedModelVersion    "1.6"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -414,7 +414,7 @@ Model {
 	  LoadSaveID		  "0"
 	  Extents		  [1810.0, 926.0]
 	  ZoomFactor		  [0.5]
-	  Offset		  [-317.74557920978509, 1502.2079122578161]
+	  Offset		  [-341.87025026509946, 1577.0893871600474]
 	}
 	Object {
 	  $ObjectID		  6
@@ -422,8 +422,8 @@ Model {
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2234"
 	  Extents		  [1810.0, 926.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-526.63919988161058, -241.57536832412541]
+	  ZoomFactor		  [1.5]
+	  Offset		  [31.444133451722749, -24.8253683241254]
 	}
 	Object {
 	  $ObjectID		  7
@@ -472,9 +472,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "entwicklungs-pc"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Nov 12 18:28:47 2025"
-  RTWModifiedTimeStamp	  684872901
-  ModelVersionFormat	  "1.%<AutoIncrement:3>"
+  LastModifiedDate	  "Fri Mar 06 16:28:46 2026"
+  RTWModifiedTimeStamp	  694715297
+  ModelVersionFormat	  "1.%<AutoIncrement:6>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "all"
@@ -1755,12 +1755,12 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "50"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "2498"
+    SIDHighWatermark	    "2499"
     Block {
       BlockType		      Constant
       Name		      "Constant"
       SID		      "2339"
-      Position		      [640, 2550, 670, 2580]
+      Position		      [620, 2540, 650, 2570]
       ZOrder		      100000
       Value		      "0"
       SampleTime	      "t_sample_s"
@@ -1809,7 +1809,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant3"
       SID		      "2482"
-      Position		      [1180, 2920, 1210, 2950]
+      Position		      [1210, 2935, 1240, 2965]
       ZOrder		      100000
       Value		      "0"
       SampleTime	      "t_sample_s"
@@ -1826,7 +1826,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant43"
       SID		      "2344"
-      Position		      [570, 2840, 600, 2870]
+      Position		      [570, 2845, 600, 2875]
       ZOrder		      100000
       Value		      "0"
       SampleTime	      "1e-3"
@@ -1865,7 +1865,7 @@ Model {
       BlockType		      Constant
       Name		      "Constant56"
       SID		      "2347"
-      Position		      [570, 2895, 600, 2925]
+      Position		      [570, 2900, 600, 2930]
       ZOrder		      100000
       Value		      "0"
       SampleTime	      "1e-3"
@@ -1917,7 +1917,7 @@ Model {
       Name		      "Demux"
       SID		      "2293"
       Ports		      [1, 5]
-      Position		      [905, 2125, 910, 2275]
+      Position		      [1285, 1672, 1290, 1868]
       ZOrder		      100000
       ForegroundColor	      "green"
       ShowName		      off
@@ -1929,7 +1929,7 @@ Model {
       Name		      "Demux1"
       SID		      "2488"
       Ports		      [1, 3]
-      Position		      [1260, 2155, 1265, 2305]
+      Position		      [1990, 1750, 1995, 1900]
       ZOrder		      100000
       ForegroundColor	      "green"
       ShowName		      off
@@ -1948,7 +1948,7 @@ Model {
       ContentPreviewEnabled   on
       System {
 	Name			"Encoder\n"
-	Location		[712, 27, 2560, 1200]
+	Location		[1992, 80, 3840, 1200]
 	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -1963,13 +1963,13 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"125"
 	Block {
 	  BlockType		  Reference
 	  Name			  "Angle_Hall1"
 	  SID			  "217"
 	  Ports			  [1, 1]
-	  Position		  [615, 17, 740, 63]
+	  Position		  [615, 22, 740, 68]
 	  ZOrder		  78134
 	  ForegroundColor	  "green"
 	  HideAutomaticName	  off
@@ -2245,7 +2245,7 @@ Model {
 	  Name			  "Noise Reduktion"
 	  SID			  "220"
 	  Ports			  [1, 1]
-	  Position		  [795, 26, 860, 54]
+	  Position		  [795, 31, 860, 59]
 	  ZOrder		  78132
 	  LibraryVersion	  "1.237"
 	  SourceBlock		  "dspfdesign/Lowpass Filter"
@@ -2474,7 +2474,6 @@ Model {
 	  ZOrder		  4944
 	  SrcBlock		  "EL3702_Voltage 1"
 	  SrcPort		  1
-	  Points		  [83, 0; 0, -5]
 	  DstBlock		  "Angle_Hall1"
 	  DstPort		  1
 	}
@@ -2491,14 +2490,15 @@ Model {
 	  SrcPort		  1
 	  Points		  [50, 0]
 	  Branch {
-	    ZOrder		    7579
-	    Points		    [0, 35]
-	    DstBlock		    "Display"
+	    ZOrder		    7616
+	    Points		    [0, -5]
+	    DstBlock		    "q1_deg_raw"
 	    DstPort		    1
 	  }
 	  Branch {
-	    ZOrder		    7501
-	    DstBlock		    "q1_deg_raw"
+	    ZOrder		    7579
+	    Points		    [0, 30]
+	    DstBlock		    "Display"
 	    DstPort		    1
 	  }
 	}
@@ -2755,9 +2755,13 @@ Model {
       BlockType		      From
       Name		      "From1"
       SID		      "2247"
-      Position		      [1010, 1546, 1075, 1574]
+      Position		      [1005, 1546, 1070, 1574]
       ZOrder		      100000
       GotoTag		      "q_d_deg"
+      Port {
+	PortNumber		1
+	Name			"q_d_deg"
+      }
     }
     Block {
       BlockType		      From
@@ -2825,7 +2829,7 @@ Model {
       BlockType		      From
       Name		      "From16"
       SID		      "2130"
-      Position		      [1015, 1405, 1055, 1435]
+      Position		      [1005, 1405, 1045, 1435]
       ZOrder		      100000
       GotoTag		      "q_deg"
       Port {
@@ -2860,7 +2864,7 @@ Model {
       BlockType		      From
       Name		      "From19"
       SID		      "2461"
-      Position		      [925, 2365, 990, 2395]
+      Position		      [950, 2395, 1015, 2425]
       ZOrder		      100000
       ForegroundColor	      "green"
       GotoTag		      "sm_flag"
@@ -2869,7 +2873,7 @@ Model {
       BlockType		      From
       Name		      "From2"
       SID		      "2291"
-      Position		      [835, 2185, 875, 2215]
+      Position		      [1215, 1755, 1255, 1785]
       ZOrder		      100000
       ForegroundColor	      "green"
       GotoTag		      "q_deg"
@@ -2878,7 +2882,7 @@ Model {
       BlockType		      From
       Name		      "From20"
       SID		      "2487"
-      Position		      [1175, 2216, 1240, 2244]
+      Position		      [1905, 1811, 1970, 1839]
       ZOrder		      100000
       GotoTag		      "q_d_deg"
     }
@@ -2928,7 +2932,7 @@ Model {
       BlockType		      From
       Name		      "From6"
       SID		      "2129"
-      Position		      [1015, 1335, 1055, 1365]
+      Position		      [1005, 1335, 1045, 1365]
       ZOrder		      100000
       GotoTag		      "p_bar"
       Port {
@@ -2979,7 +2983,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto"
       SID		      "2243"
-      Position		      [1175, 2366, 1240, 2394]
+      Position		      [1175, 2381, 1240, 2409]
       ZOrder		      100000
       GotoTag		      "p_d_bar"
     }
@@ -2995,7 +2999,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto10"
       SID		      "2302"
-      Position		      [955, 2267, 1015, 2293]
+      Position		      [1335, 1837, 1395, 1863]
       ZOrder		      100000
       ForegroundColor	      "green"
       GotoTag		      "q5_deg"
@@ -3004,7 +3008,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto11"
       SID		      "2489"
-      Position		      [1325, 2170, 1430, 2190]
+      Position		      [2055, 1765, 2160, 1785]
       ZOrder		      100000
       ForegroundColor	      "red"
       GotoTag		      "q1_d_deg"
@@ -3013,7 +3017,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto12"
       SID		      "2490"
-      Position		      [1325, 2220, 1430, 2240]
+      Position		      [2055, 1815, 2160, 1835]
       ZOrder		      100000
       ForegroundColor	      "red"
       GotoTag		      "q2_d_deg"
@@ -3022,7 +3026,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto13"
       SID		      "2491"
-      Position		      [1325, 2270, 1430, 2290]
+      Position		      [2055, 1865, 2160, 1885]
       ZOrder		      100000
       ForegroundColor	      "red"
       GotoTag		      "q3_d_deg"
@@ -3031,7 +3035,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto2"
       SID		      "2294"
-      Position		      [955, 2107, 1015, 2133]
+      Position		      [1335, 1677, 1395, 1703]
       ZOrder		      100000
       ForegroundColor	      "green"
       GotoTag		      "q1_deg"
@@ -3040,7 +3044,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto3"
       SID		      "2299"
-      Position		      [955, 2147, 1015, 2173]
+      Position		      [1335, 1717, 1395, 1743]
       ZOrder		      100000
       ForegroundColor	      "green"
       GotoTag		      "q2_deg"
@@ -3049,7 +3053,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto4"
       SID		      "2300"
-      Position		      [955, 2187, 1015, 2213]
+      Position		      [1335, 1757, 1395, 1783]
       ZOrder		      100000
       ForegroundColor	      "green"
       GotoTag		      "q3_deg"
@@ -3076,7 +3080,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto68"
       SID		      "2361"
-      Position		      [1400, 2815, 1520, 2845]
+      Position		      [1400, 2840, 1520, 2870]
       ZOrder		      100000
       GotoTag		      "q_deg_raw_I2C"
     }
@@ -3100,7 +3104,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto9"
       SID		      "2301"
-      Position		      [955, 2227, 1015, 2253]
+      Position		      [1335, 1797, 1395, 1823]
       ZOrder		      100000
       ForegroundColor	      "green"
       GotoTag		      "q4_deg"
@@ -3144,7 +3148,7 @@ Model {
       BlockType		      ManualSwitch
       Name		      "Manual Switch15"
       SID		      "2369"
-      Position		      [620, 2847, 650, 2883]
+      Position		      [620, 2852, 650, 2888]
       ZOrder		      100000
     }
     Block {
@@ -3165,7 +3169,7 @@ Model {
       BlockType		      ManualSwitch
       Name		      "Manual Switch25"
       SID		      "2372"
-      Position		      [630, 2902, 660, 2938]
+      Position		      [630, 2907, 660, 2943]
       ZOrder		      100000
     }
     Block {
@@ -3210,7 +3214,7 @@ Model {
       Name		      "Mux"
       SID		      "2309"
       Ports		      [10, 1]
-      Position		      [740, 2125, 760, 2600]
+      Position		      [740, 2135, 760, 2625]
       ZOrder		      100000
       ShowName		      off
       Inputs		      "10"
@@ -3232,7 +3236,7 @@ Model {
       Name		      "Mux2"
       SID		      "2483"
       Ports		      [5, 1]
-      Position		      [1360, 2743, 1375, 2917]
+      Position		      [1360, 2710, 1375, 3000]
       ZOrder		      100000
       ShowName		      off
       Inputs		      "5"
@@ -3564,7 +3568,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "PWMi2"
 	  SID			  "2434"
-	  Position		  [965, 113, 995, 127]
+	  Position		  [965, 183, 995, 197]
 	  ZOrder		  78295
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -3662,7 +3666,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "PWM Generator2"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -70]
 	  DstBlock		  "PWMi2"
 	  DstPort		  1
 	}
@@ -3994,7 +3997,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "PWMi2"
 	  SID			  "2449"
-	  Position		  [965, 113, 995, 127]
+	  Position		  [965, 183, 995, 197]
 	  ZOrder		  78295
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -4005,7 +4008,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "PWM Generator2"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -70]
 	  DstBlock		  "PWMi2"
 	  DstPort		  1
 	}
@@ -4434,7 +4436,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "PWMi2"
 	  SID			  "2390"
-	  Position		  [965, 113, 995, 127]
+	  Position		  [965, 183, 995, 197]
 	  ZOrder		  78295
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -4445,7 +4447,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "PWM Generator2"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -70]
 	  DstBlock		  "PWMi2"
 	  DstPort		  1
 	}
@@ -4550,7 +4551,7 @@ Model {
       ContentPreviewEnabled   on
       System {
 	Name			"Pressure\n"
-	Location		[1992, 27, 3840, 1200]
+	Location		[1992, 80, 3840, 1200]
 	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -4565,13 +4566,13 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"80"
 	Block {
 	  BlockType		  Reference
 	  Name			  "EL3104_bit_to_bar (Piezoventile)"
 	  SID			  "1874"
 	  Ports			  [4, 4]
-	  Position		  [610, 863, 755, 962]
+	  Position		  [610, 865, 805, 1000]
 	  ZOrder		  77584
 	  LibraryVersion	  "1.81"
 	  SourceBlock		  "test_bench_lib/EL3104_bit_to_bar (Piezoventile)"
@@ -4899,7 +4900,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "p41_bar"
 	  SID			  "1763"
-	  Position		  [1275, 868, 1305, 882]
+	  Position		  [1275, 873, 1305, 887]
 	  ZOrder		  77486
 	  Port			  "7"
 	  IconDisplay		  "Port number"
@@ -5025,7 +5026,6 @@ Model {
 	  ZOrder		  100
 	  SrcBlock		  "EL3104_bit_to_bar (Piezoventile)"
 	  SrcPort		  2
-	  Points		  [255, 0; 0, 15]
 	  DstBlock		  "p42_bar"
 	  DstPort		  1
 	}
@@ -5040,7 +5040,6 @@ Model {
 	  ZOrder		  102
 	  SrcBlock		  "EL3104_bit_to_bar (Piezoventile)"
 	  SrcPort		  4
-	  Points		  [222, 0; 0, 35]
 	  DstBlock		  "p52_bar"
 	  DstPort		  1
 	}
@@ -5048,7 +5047,6 @@ Model {
 	  ZOrder		  101
 	  SrcBlock		  "EL3104_bit_to_bar (Piezoventile)"
 	  SrcPort		  3
-	  Points		  [240, 0; 0, 25]
 	  DstBlock		  "p51_bar"
 	  DstPort		  1
 	}
@@ -5056,7 +5054,7 @@ Model {
 	  ZOrder		  104
 	  SrcBlock		  "EL31xx_1"
 	  SrcPort		  2
-	  Points		  [45, 0; 0, -25]
+	  Points		  [45, 0; 0, -20]
 	  DstBlock		  "EL3104_bit_to_bar (Piezoventile)"
 	  DstPort		  1
 	}
@@ -5064,7 +5062,7 @@ Model {
 	  ZOrder		  105
 	  SrcBlock		  "EL31xx_1"
 	  SrcPort		  3
-	  Points		  [52, 0; 0, -25]
+	  Points		  [52, 0; 0, -10]
 	  DstBlock		  "EL3104_bit_to_bar (Piezoventile)"
 	  DstPort		  2
 	}
@@ -5072,7 +5070,6 @@ Model {
 	  ZOrder		  106
 	  SrcBlock		  "EL31xx_1"
 	  SrcPort		  4
-	  Points		  [60, 0; 0, -25]
 	  DstBlock		  "EL3104_bit_to_bar (Piezoventile)"
 	  DstPort		  3
 	}
@@ -5080,7 +5077,7 @@ Model {
 	  ZOrder		  107
 	  SrcBlock		  "EL31xx_2"
 	  SrcPort		  1
-	  Points		  [78, 0; 0, -70]
+	  Points		  [78, 0; 0, -35]
 	  DstBlock		  "EL3104_bit_to_bar (Piezoventile)"
 	  DstPort		  4
 	}
@@ -5220,7 +5217,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"80"
+	ZoomFactor		"150"
 	Block {
 	  BlockType		  Inport
 	  Name			  "global_start"
@@ -5374,10 +5371,6 @@ Model {
 	  SamplesPerFrame	  "1"
 	  OutputAfterFinalValue	  "Cyclic repetition"
 	  OutputFrames		  off
-	  Port {
-	    PortNumber		    1
-	    Name		    "q_soll_bar"
-	  }
 	}
 	Block {
 	  BlockType		  Reference
@@ -5399,10 +5392,6 @@ Model {
 	  SamplesPerFrame	  "1"
 	  OutputAfterFinalValue	  "Cyclic repetition"
 	  OutputFrames		  off
-	  Port {
-	    PortNumber		    1
-	    Name		    "q_soll_bar"
-	  }
 	}
 	Block {
 	  BlockType		  Reference
@@ -5424,10 +5413,6 @@ Model {
 	  SamplesPerFrame	  "1"
 	  OutputAfterFinalValue	  "Cyclic repetition"
 	  OutputFrames		  off
-	  Port {
-	    PortNumber		    1
-	    Name		    "q_soll_bar"
-	  }
 	}
 	Block {
 	  BlockType		  Concatenate
@@ -5461,9 +5446,7 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  Name			  "q_soll_bar"
 	  ZOrder		  7885
-	  Labels		  [0, 0]
 	  SrcBlock		  "Triggered Signal\nFrom Workspace2"
 	  SrcPort		  1
 	  Points		  [55, 0]
@@ -5507,9 +5490,7 @@ Model {
 	  }
 	}
 	Line {
-	  Name			  "q_soll_bar"
 	  ZOrder		  7889
-	  Labels		  [0, 0]
 	  SrcBlock		  "Triggered Signal\nFrom Workspace4"
 	  SrcPort		  1
 	  Points		  [54, 0]
@@ -5579,9 +5560,7 @@ Model {
 	  DstPort		  trigger
 	}
 	Line {
-	  Name			  "q_soll_bar"
 	  ZOrder		  7900
-	  Labels		  [0, 0]
 	  SrcBlock		  "Triggered Signal\nFrom Workspace3"
 	  SrcPort		  1
 	  Points		  [50, 0]
@@ -6050,7 +6029,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant1"
 	  SID			  "2162"
-	  Position		  [-220, 120, -190, 150]
+	  Position		  [-220, 125, -190, 155]
 	  ZOrder		  100000
 	  Value			  "0.25"
 	}
@@ -6066,7 +6045,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant2"
 	  SID			  "2209"
-	  Position		  [-220, 45, -190, 75]
+	  Position		  [-220, 50, -190, 80]
 	  ZOrder		  100000
 	  Value			  "0.25"
 	}
@@ -6074,7 +6053,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant3"
 	  SID			  "2164"
-	  Position		  [-220, 270, -190, 300]
+	  Position		  [-220, 275, -190, 305]
 	  ZOrder		  100000
 	  Value			  "0.25"
 	}
@@ -6090,7 +6069,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant5"
 	  SID			  "2166"
-	  Position		  [-220, 440, -190, 470]
+	  Position		  [-220, 425, -190, 455]
 	  ZOrder		  100000
 	  Value			  "0.25"
 	}
@@ -6098,7 +6077,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant6"
 	  SID			  "2167"
-	  Position		  [-220, 525, -190, 555]
+	  Position		  [-220, 500, -190, 530]
 	  ZOrder		  100000
 	  Value			  "0.25"
 	}
@@ -6106,7 +6085,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant7"
 	  SID			  "2168"
-	  Position		  [-220, 600, -190, 630]
+	  Position		  [-220, 575, -190, 605]
 	  ZOrder		  100000
 	  Value			  "0.25"
 	}
@@ -6114,7 +6093,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant8"
 	  SID			  "2169"
-	  Position		  [-220, 670, -190, 700]
+	  Position		  [-220, 650, -190, 680]
 	  ZOrder		  100000
 	  Value			  "0.25"
 	}
@@ -6122,7 +6101,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant9"
 	  SID			  "2170"
-	  Position		  [-220, 745, -190, 775]
+	  Position		  [-220, 725, -190, 755]
 	  ZOrder		  100000
 	  Value			  "0.25"
 	}
@@ -6142,7 +6121,7 @@ Model {
 	  Name			  "EL4xxx_0"
 	  SID			  "1227"
 	  Ports			  [8]
-	  Position		  [750, 20, 880, 590]
+	  Position		  [740, 30, 880, 635]
 	  ZOrder		  78023
 	  BackgroundColor	  "yellow"
 	  LibraryVersion	  "1.1702"
@@ -6174,7 +6153,7 @@ Model {
 	  Name			  "EL4xxx_1"
 	  SID			  "1996"
 	  Ports			  [2]
-	  Position		  [750, 657, 865, 793]
+	  Position		  [750, 634, 870, 781]
 	  ZOrder		  100000
 	  BackgroundColor	  "yellow"
 	  LibraryVersion	  "1.1702"
@@ -6205,7 +6184,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From16"
 	  SID			  "2097"
-	  Position		  [20, 130, 60, 160]
+	  Position		  [20, 140, 60, 170]
 	  ZOrder		  100000
 	  GotoTag		  "p_start"
 	}
@@ -6213,7 +6192,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From18"
 	  SID			  "2098"
-	  Position		  [20, 210, 60, 240]
+	  Position		  [20, 215, 60, 245]
 	  ZOrder		  100000
 	  GotoTag		  "p_start"
 	}
@@ -6221,7 +6200,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From19"
 	  SID			  "2099"
-	  Position		  [20, 280, 60, 310]
+	  Position		  [20, 290, 60, 320]
 	  ZOrder		  100000
 	  GotoTag		  "p_start"
 	}
@@ -6229,7 +6208,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From20"
 	  SID			  "2100"
-	  Position		  [20, 360, 60, 390]
+	  Position		  [20, 365, 60, 395]
 	  ZOrder		  100000
 	  GotoTag		  "p_start"
 	}
@@ -6237,7 +6216,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From21"
 	  SID			  "2101"
-	  Position		  [20, 450, 60, 480]
+	  Position		  [20, 440, 60, 470]
 	  ZOrder		  100000
 	  GotoTag		  "p_start"
 	}
@@ -6245,7 +6224,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From4"
 	  SID			  "2094"
-	  Position		  [20, 755, 60, 785]
+	  Position		  [20, 740, 60, 770]
 	  ZOrder		  100000
 	  GotoTag		  "p_start"
 	}
@@ -6253,7 +6232,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From6"
 	  SID			  "2096"
-	  Position		  [20, 55, 60, 85]
+	  Position		  [20, 65, 60, 95]
 	  ZOrder		  100000
 	  GotoTag		  "p_start"
 	}
@@ -6261,7 +6240,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From76"
 	  SID			  "2102"
-	  Position		  [20, 535, 60, 565]
+	  Position		  [20, 515, 60, 545]
 	  ZOrder		  100000
 	  GotoTag		  "p_start"
 	}
@@ -6269,7 +6248,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From92"
 	  SID			  "2103"
-	  Position		  [20, 610, 60, 640]
+	  Position		  [20, 590, 60, 620]
 	  ZOrder		  100000
 	  GotoTag		  "p_start"
 	}
@@ -6277,7 +6256,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From93"
 	  SID			  "2104"
-	  Position		  [20, 680, 60, 710]
+	  Position		  [20, 665, 60, 695]
 	  ZOrder		  100000
 	  GotoTag		  "p_start"
 	}
@@ -6293,7 +6272,7 @@ Model {
 	  BlockType		  ManualSwitch
 	  Name			  "Manual Switch1"
 	  SID			  "2152"
-	  Position		  [-155, 107, -125, 143]
+	  Position		  [-155, 112, -125, 148]
 	  ZOrder		  100000
 	}
 	Block {
@@ -6307,14 +6286,14 @@ Model {
 	  BlockType		  ManualSwitch
 	  Name			  "Manual Switch3"
 	  SID			  "2154"
-	  Position		  [-155, 257, -125, 293]
+	  Position		  [-155, 262, -125, 298]
 	  ZOrder		  100000
 	}
 	Block {
 	  BlockType		  ManualSwitch
 	  Name			  "Manual Switch37"
 	  SID			  "2151"
-	  Position		  [-155, 32, -125, 68]
+	  Position		  [-155, 37, -125, 73]
 	  ZOrder		  100000
 	}
 	Block {
@@ -6328,35 +6307,35 @@ Model {
 	  BlockType		  ManualSwitch
 	  Name			  "Manual Switch5"
 	  SID			  "2156"
-	  Position		  [-155, 427, -125, 463]
+	  Position		  [-155, 412, -125, 448]
 	  ZOrder		  100000
 	}
 	Block {
 	  BlockType		  ManualSwitch
 	  Name			  "Manual Switch6"
 	  SID			  "2157"
-	  Position		  [-155, 512, -125, 548]
+	  Position		  [-155, 487, -125, 523]
 	  ZOrder		  100000
 	}
 	Block {
 	  BlockType		  ManualSwitch
 	  Name			  "Manual Switch7"
 	  SID			  "2158"
-	  Position		  [-155, 587, -125, 623]
+	  Position		  [-155, 562, -125, 598]
 	  ZOrder		  100000
 	}
 	Block {
 	  BlockType		  ManualSwitch
 	  Name			  "Manual Switch8"
 	  SID			  "2159"
-	  Position		  [-155, 657, -125, 693]
+	  Position		  [-155, 637, -125, 673]
 	  ZOrder		  100000
 	}
 	Block {
 	  BlockType		  ManualSwitch
 	  Name			  "Manual Switch9"
 	  SID			  "2160"
-	  Position		  [-155, 732, -125, 768]
+	  Position		  [-155, 712, -125, 748]
 	  ZOrder		  100000
 	}
 	Block {
@@ -6364,7 +6343,7 @@ Model {
 	  Name			  "p_soll2bit"
 	  SID			  "2083"
 	  Ports			  [2, 1]
-	  Position		  [95, 32, 225, 83]
+	  Position		  [95, 42, 225, 93]
 	  ZOrder		  100000
 	  LibraryVersion	  "1.81"
 	  SourceBlock		  "test_bench_lib/p_soll2bit"
@@ -6386,7 +6365,7 @@ Model {
 	  Name			  "p_soll2bit1"
 	  SID			  "2084"
 	  Ports			  [2, 1]
-	  Position		  [95, 107, 225, 158]
+	  Position		  [95, 117, 225, 168]
 	  ZOrder		  100000
 	  LibraryVersion	  "1.81"
 	  SourceBlock		  "test_bench_lib/p_soll2bit"
@@ -6408,7 +6387,7 @@ Model {
 	  Name			  "p_soll2bit2"
 	  SID			  "2085"
 	  Ports			  [2, 1]
-	  Position		  [90, 187, 220, 238]
+	  Position		  [90, 192, 220, 243]
 	  ZOrder		  100000
 	  LibraryVersion	  "1.81"
 	  SourceBlock		  "test_bench_lib/p_soll2bit"
@@ -6430,7 +6409,7 @@ Model {
 	  Name			  "p_soll2bit3"
 	  SID			  "2086"
 	  Ports			  [2, 1]
-	  Position		  [90, 257, 220, 308]
+	  Position		  [90, 267, 220, 318]
 	  ZOrder		  100000
 	  LibraryVersion	  "1.81"
 	  SourceBlock		  "test_bench_lib/p_soll2bit"
@@ -6452,7 +6431,7 @@ Model {
 	  Name			  "p_soll2bit4"
 	  SID			  "2087"
 	  Ports			  [2, 1]
-	  Position		  [90, 337, 220, 388]
+	  Position		  [90, 342, 220, 393]
 	  ZOrder		  100000
 	  LibraryVersion	  "1.81"
 	  SourceBlock		  "test_bench_lib/p_soll2bit"
@@ -6474,7 +6453,7 @@ Model {
 	  Name			  "p_soll2bit5"
 	  SID			  "2088"
 	  Ports			  [2, 1]
-	  Position		  [90, 427, 220, 478]
+	  Position		  [90, 417, 220, 468]
 	  ZOrder		  100000
 	  LibraryVersion	  "1.81"
 	  SourceBlock		  "test_bench_lib/p_soll2bit"
@@ -6496,7 +6475,7 @@ Model {
 	  Name			  "p_soll2bit6"
 	  SID			  "2089"
 	  Ports			  [2, 1]
-	  Position		  [90, 512, 220, 563]
+	  Position		  [90, 492, 220, 543]
 	  ZOrder		  100000
 	  LibraryVersion	  "1.81"
 	  SourceBlock		  "test_bench_lib/p_soll2bit"
@@ -6518,7 +6497,7 @@ Model {
 	  Name			  "p_soll2bit7"
 	  SID			  "2090"
 	  Ports			  [2, 1]
-	  Position		  [90, 587, 220, 638]
+	  Position		  [90, 567, 220, 618]
 	  ZOrder		  100000
 	  LibraryVersion	  "1.81"
 	  SourceBlock		  "test_bench_lib/p_soll2bit"
@@ -6540,7 +6519,7 @@ Model {
 	  Name			  "p_soll2bit8"
 	  SID			  "2091"
 	  Ports			  [2, 1]
-	  Position		  [90, 657, 220, 708]
+	  Position		  [90, 642, 220, 693]
 	  ZOrder		  100000
 	  LibraryVersion	  "1.81"
 	  SourceBlock		  "test_bench_lib/p_soll2bit"
@@ -6562,7 +6541,7 @@ Model {
 	  Name			  "p_soll2bit9"
 	  SID			  "2092"
 	  Ports			  [2, 1]
-	  Position		  [90, 732, 220, 783]
+	  Position		  [90, 717, 220, 768]
 	  ZOrder		  100000
 	  LibraryVersion	  "1.81"
 	  SourceBlock		  "test_bench_lib/p_soll2bit"
@@ -6601,17 +6580,15 @@ Model {
 	  Labels		  [1, 0]
 	  SrcBlock		  "p_soll2bit7"
 	  SrcPort		  1
-	  Points		  [260, 0; 0, -65]
 	  DstBlock		  "EL4xxx_0"
 	  DstPort		  8
 	}
 	Line {
 	  Name			  "p32"
 	  ZOrder		  7592
-	  Labels		  [3, 0]
+	  Labels		  [1, 0]
 	  SrcBlock		  "p_soll2bit5"
 	  SrcPort		  1
-	  Points		  [260, 0; 0, -45]
 	  DstBlock		  "EL4xxx_0"
 	  DstPort		  6
 	}
@@ -6635,7 +6612,6 @@ Model {
 	  Labels		  [-1, 1]
 	  SrcBlock		  "p_soll2bit6"
 	  SrcPort		  1
-	  Points		  [260, 0; 0, -60]
 	  DstBlock		  "EL4xxx_0"
 	  DstPort		  7
 	}
@@ -6649,10 +6625,9 @@ Model {
 	Line {
 	  Name			  "p51"
 	  ZOrder		  7595
-	  Labels		  [3, 0]
+	  Labels		  [1, 0]
 	  SrcBlock		  "p_soll2bit8"
 	  SrcPort		  1
-	  Points		  [9, 0; 0, 5]
 	  DstBlock		  "EL4xxx_1"
 	  DstPort		  1
 	}
@@ -6666,20 +6641,18 @@ Model {
 	Line {
 	  Name			  "p31"
 	  ZOrder		  7591
-	  Labels		  [3, 0]
+	  Labels		  [1, 0]
 	  SrcBlock		  "p_soll2bit4"
 	  SrcPort		  1
-	  Points		  [9, 0; 0, -25]
 	  DstBlock		  "EL4xxx_0"
 	  DstPort		  5
 	}
 	Line {
 	  Name			  "p22"
 	  ZOrder		  7590
-	  Labels		  [3, 0]
+	  Labels		  [1, 0]
 	  SrcBlock		  "p_soll2bit3"
 	  SrcPort		  1
-	  Points		  [140, 0; 0, -15]
 	  DstBlock		  "EL4xxx_0"
 	  DstPort		  4
 	}
@@ -6687,7 +6660,6 @@ Model {
 	  ZOrder		  7773
 	  SrcBlock		  "Demux"
 	  SrcPort		  4
-	  Points		  [92, 0; 0, -5]
 	  DstBlock		  "Manual Switch3"
 	  DstPort		  1
 	}
@@ -6717,20 +6689,18 @@ Model {
 	Line {
 	  Name			  "p12"
 	  ZOrder		  7588
-	  Labels		  [2, 0]
+	  Labels		  [1, 0]
 	  SrcBlock		  "p_soll2bit1"
 	  SrcPort		  1
-	  Points		  [253, 0; 0, -5]
 	  DstBlock		  "EL4xxx_0"
 	  DstPort		  2
 	}
 	Line {
 	  Name			  "p21"
 	  ZOrder		  7589
-	  Labels		  [2, 1]
+	  Labels		  [1, 1]
 	  SrcBlock		  "p_soll2bit2"
 	  SrcPort		  1
-	  Points		  [255, 0; 0, -15]
 	  DstBlock		  "EL4xxx_0"
 	  DstPort		  3
 	}
@@ -6745,7 +6715,6 @@ Model {
 	  ZOrder		  7768
 	  SrcBlock		  "Demux"
 	  SrcPort		  1
-	  Points		  [92, 0; 0, -5]
 	  DstBlock		  "Manual Switch37"
 	  DstPort		  1
 	}
@@ -6789,7 +6758,6 @@ Model {
 	  ZOrder		  7777
 	  SrcBlock		  "Demux"
 	  SrcPort		  8
-	  Points		  [148, 0; 0, 25]
 	  DstBlock		  "Manual Switch7"
 	  DstPort		  1
 	}
@@ -6797,7 +6765,6 @@ Model {
 	  ZOrder		  7776
 	  SrcBlock		  "Demux"
 	  SrcPort		  7
-	  Points		  [141, 0; 0, 25]
 	  DstBlock		  "Manual Switch6"
 	  DstPort		  1
 	}
@@ -6805,7 +6772,6 @@ Model {
 	  ZOrder		  7770
 	  SrcBlock		  "Demux"
 	  SrcPort		  2
-	  Points		  [92, 0; 0, -5]
 	  DstBlock		  "Manual Switch1"
 	  DstPort		  1
 	}
@@ -6813,7 +6779,6 @@ Model {
 	  ZOrder		  7780
 	  SrcBlock		  "Demux"
 	  SrcPort		  10
-	  Points		  [226, 0; 0, 20]
 	  DstBlock		  "Manual Switch9"
 	  DstPort		  1
 	}
@@ -6821,7 +6786,6 @@ Model {
 	  ZOrder		  7775
 	  SrcBlock		  "Demux"
 	  SrcPort		  6
-	  Points		  [142, 0; 0, 15]
 	  DstBlock		  "Manual Switch5"
 	  DstPort		  1
 	}
@@ -6843,7 +6807,6 @@ Model {
 	  ZOrder		  7685
 	  SrcBlock		  "Manual Switch37"
 	  SrcPort		  1
-	  Points		  [105, 0; 0, -5]
 	  DstBlock		  "p_soll2bit"
 	  DstPort		  1
 	}
@@ -6851,7 +6814,6 @@ Model {
 	  ZOrder		  7695
 	  SrcBlock		  "Manual Switch1"
 	  SrcPort		  1
-	  Points		  [105, 0; 0, -5]
 	  DstBlock		  "p_soll2bit1"
 	  DstPort		  1
 	}
@@ -6859,7 +6821,6 @@ Model {
 	  ZOrder		  7696
 	  SrcBlock		  "Manual Switch2"
 	  SrcPort		  1
-	  Points		  [102, 0; 0, -5]
 	  DstBlock		  "p_soll2bit2"
 	  DstPort		  1
 	}
@@ -6867,7 +6828,6 @@ Model {
 	  ZOrder		  7697
 	  SrcBlock		  "Manual Switch3"
 	  SrcPort		  1
-	  Points		  [102, 0; 0, -5]
 	  DstBlock		  "p_soll2bit3"
 	  DstPort		  1
 	}
@@ -6875,7 +6835,6 @@ Model {
 	  ZOrder		  7698
 	  SrcBlock		  "Manual Switch4"
 	  SrcPort		  1
-	  Points		  [102, 0; 0, -5]
 	  DstBlock		  "p_soll2bit4"
 	  DstPort		  1
 	}
@@ -6883,7 +6842,6 @@ Model {
 	  ZOrder		  7699
 	  SrcBlock		  "Manual Switch5"
 	  SrcPort		  1
-	  Points		  [97, 0; 0, -5]
 	  DstBlock		  "p_soll2bit5"
 	  DstPort		  1
 	}
@@ -6891,7 +6849,6 @@ Model {
 	  ZOrder		  7700
 	  SrcBlock		  "Manual Switch6"
 	  SrcPort		  1
-	  Points		  [97, 0; 0, -5]
 	  DstBlock		  "p_soll2bit6"
 	  DstPort		  1
 	}
@@ -6899,7 +6856,6 @@ Model {
 	  ZOrder		  7701
 	  SrcBlock		  "Manual Switch7"
 	  SrcPort		  1
-	  Points		  [97, 0; 0, -5]
 	  DstBlock		  "p_soll2bit7"
 	  DstPort		  1
 	}
@@ -6907,7 +6863,6 @@ Model {
 	  ZOrder		  7702
 	  SrcBlock		  "Manual Switch8"
 	  SrcPort		  1
-	  Points		  [97, 0; 0, -5]
 	  DstBlock		  "p_soll2bit8"
 	  DstPort		  1
 	}
@@ -6985,7 +6940,6 @@ Model {
 	  ZOrder		  7713
 	  SrcBlock		  "Manual Switch9"
 	  SrcPort		  1
-	  Points		  [97, 0; 0, -5]
 	  DstBlock		  "p_soll2bit9"
 	  DstPort		  1
 	}
@@ -7760,7 +7714,7 @@ Model {
       ContentPreviewEnabled   on
       System {
 	Name			"Subsystem5"
-	Location		[712, 27, 2560, 1200]
+	Location		[1992, 80, 3840, 1200]
 	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -7775,12 +7729,12 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"150"
+	ZoomFactor		"175"
 	Block {
 	  BlockType		  Inport
 	  Name			  "l1\n"
 	  SID			  "2473"
-	  Position		  [10, -27, 40, -13]
+	  Position		  [10, 28, 40, 42]
 	  ZOrder		  100000
 	  IconDisplay		  "Port number"
 	}
@@ -7788,7 +7742,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "h1"
 	  SID			  "2474"
-	  Position		  [10, 23, 40, 37]
+	  Position		  [10, 53, 40, 67]
 	  ZOrder		  100000
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -7797,7 +7751,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "l2"
 	  SID			  "2475"
-	  Position		  [10, 68, 40, 82]
+	  Position		  [10, 113, 40, 127]
 	  ZOrder		  100000
 	  Port			  "3"
 	  IconDisplay		  "Port number"
@@ -7806,7 +7760,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "h2"
 	  SID			  "2476"
-	  Position		  [10, 103, 40, 117]
+	  Position		  [10, 138, 40, 152]
 	  ZOrder		  100000
 	  Port			  "4"
 	  IconDisplay		  "Port number"
@@ -7824,7 +7778,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "h3\n"
 	  SID			  "2478"
-	  Position		  [10, 243, 40, 257]
+	  Position		  [10, 223, 40, 237]
 	  ZOrder		  100000
 	  Port			  "6"
 	  IconDisplay		  "Port number"
@@ -7917,7 +7871,6 @@ Model {
 	  ZOrder		  8146
 	  SrcBlock		  "h2"
 	  SrcPort		  1
-	  Points		  [1, 0; 0, 21; 116, 0; 0, 14]
 	  DstBlock		  "Angle_Hall_I2C\n1"
 	  DstPort		  2
 	}
@@ -7939,7 +7892,6 @@ Model {
 	  ZOrder		  8148
 	  SrcBlock		  "h3\n"
 	  SrcPort		  1
-	  Points		  [165, 0; 0, -20]
 	  DstBlock		  "Angle_Hall_I2C\n2"
 	  DstPort		  2
 	}
@@ -7947,7 +7899,6 @@ Model {
 	  ZOrder		  8145
 	  SrcBlock		  "l2"
 	  SrcPort		  1
-	  Points		  [223, 0; 0, 45]
 	  DstBlock		  "Angle_Hall_I2C\n1"
 	  DstPort		  1
 	}
@@ -7955,7 +7906,6 @@ Model {
 	  ZOrder		  8144
 	  SrcBlock		  "h1"
 	  SrcPort		  1
-	  Points		  [83, 0; 0, 30]
 	  DstBlock		  "Angle_Hall_I2C\n"
 	  DstPort		  2
 	}
@@ -7970,7 +7920,6 @@ Model {
 	  ZOrder		  8143
 	  SrcBlock		  "l1\n"
 	  SrcPort		  1
-	  Points		  [167, 0; 0, 55]
 	  DstBlock		  "Angle_Hall_I2C\n"
 	  DstPort		  1
 	}
@@ -7991,7 +7940,7 @@ Model {
       BlockType		      Switch
       Name		      "Switch14"
       SID		      "2453"
-      Position		      [1070, 2360, 1120, 2400]
+      Position		      [1070, 2375, 1120, 2415]
       ZOrder		      100000
       ForegroundColor	      "green"
       Criteria		      "u2 > Threshold"
@@ -8397,7 +8346,9 @@ Model {
       DstPort		      1
     }
     Line {
+      Name		      "q_d_deg"
       ZOrder		      7934
+      Labels		      [1, 1]
       SrcBlock		      "From1"
       SrcPort		      1
       DstBlock		      "Scope7"
@@ -8414,7 +8365,6 @@ Model {
       ZOrder		      7989
       SrcBlock		      "Demux"
       SrcPort		      1
-      Points		      [18, 0; 0, -20]
       DstBlock		      "Goto2"
       DstPort		      1
     }
@@ -8422,7 +8372,6 @@ Model {
       ZOrder		      7994
       SrcBlock		      "Demux"
       SrcPort		      2
-      Points		      [18, 0; 0, -10]
       DstBlock		      "Goto3"
       DstPort		      1
     }
@@ -8437,7 +8386,6 @@ Model {
       ZOrder		      7996
       SrcBlock		      "Demux"
       SrcPort		      4
-      Points		      [18, 0; 0, 10]
       DstBlock		      "Goto9"
       DstPort		      1
     }
@@ -8445,7 +8393,6 @@ Model {
       ZOrder		      7997
       SrcBlock		      "Demux"
       SrcPort		      5
-      Points		      [18, 0; 0, 20]
       DstBlock		      "Goto10"
       DstPort		      1
     }
@@ -8466,10 +8413,9 @@ Model {
     Line {
       Name		      "p11_d_bar"
       ZOrder		      8007
-      Labels		      [2, 1]
+      Labels		      [1, 1]
       SrcBlock		      "Subsystem1"
       SrcPort		      1
-      Points		      [80, 0; 0, 5]
       DstBlock		      "Mux"
       DstPort		      1
     }
@@ -8488,17 +8434,17 @@ Model {
       Labels		      [2, 0]
       SrcBlock		      "Subsystem3"
       SrcPort		      2
-      Points		      [138, 0; 0, -30]
+      Points		      [0, -20]
       DstBlock		      "Mux"
       DstPort		      4
     }
     Line {
       Name		      "p21_d_bar"
       ZOrder		      8014
-      Labels		      [1, 1]
+      Labels		      [2, 1]
       SrcBlock		      "Subsystem3"
       SrcPort		      1
-      Points		      [138, 0; 0, -25]
+      Points		      [0, -20]
       DstBlock		      "Mux"
       DstPort		      3
     }
@@ -8536,17 +8482,17 @@ Model {
       Labels		      [2, 1]
       SrcBlock		      "Subsystem4"
       SrcPort		      1
-      Points		      [0, -55; 150, 0]
+      Points		      [0, -65]
       DstBlock		      "Mux"
       DstPort		      5
     }
     Line {
       Name		      "p32_d_bar"
       ZOrder		      8021
-      Labels		      [1, 0]
+      Labels		      [2, 0]
       SrcBlock		      "Subsystem4"
       SrcPort		      2
-      Points		      [109, 0; 0, -85]
+      Points		      [0, -20; 109, 0; 0, -45]
       DstBlock		      "Mux"
       DstPort		      6
     }
@@ -8554,35 +8500,32 @@ Model {
       ZOrder		      8022
       SrcBlock		      "Constant"
       SrcPort		      1
-      Points		      [23, 0]
+      Points		      [0, 0; 43, 0]
       Branch {
-	ZOrder			8030
-	Points			[0, -45]
+	ZOrder			8271
+	Points			[0, 50]
+	DstBlock		"Mux"
+	DstPort			10
+      }
+      Branch {
+	ZOrder			8270
+	Points			[0, -50]
 	Branch {
-	  ZOrder		  8032
-	  Points		  [0, -45]
-	  Branch {
-	    ZOrder		    8029
-	    Points		    [0, -45]
-	    DstBlock		    "Mux"
-	    DstPort		    7
-	  }
-	  Branch {
-	    ZOrder		    8024
-	    DstBlock		    "Mux"
-	    DstPort		    8
-	  }
+	  ZOrder		  8269
+	  Points		  [0, -50]
+	  DstBlock		  "Mux"
+	  DstPort		  7
 	}
 	Branch {
-	  ZOrder		  8025
+	  ZOrder		  8024
 	  DstBlock		  "Mux"
-	  DstPort		  9
+	  DstPort		  8
 	}
       }
       Branch {
-	ZOrder			8028
+	ZOrder			8025
 	DstBlock		"Mux"
-	DstPort			10
+	DstPort			9
       }
     }
     Line {
@@ -8604,7 +8547,6 @@ Model {
       ZOrder		      8087
       SrcBlock		      "PID Microvalves1"
       SrcPort		      1
-      Points		      [53, 0; 0, -5]
       DstBlock		      "Manual Switch15"
       DstPort		      2
     }
@@ -8627,7 +8569,7 @@ Model {
       ZOrder		      8046
       SrcBlock		      "Manual Switch25"
       SrcPort		      1
-      Points		      [11, 0; 0, -150]
+      Points		      [11, 0; 0, -155]
       DstBlock		      "I2C"
       DstPort		      4
     }
@@ -8635,7 +8577,7 @@ Model {
       ZOrder		      8047
       SrcBlock		      "Manual Switch15"
       SrcPort		      1
-      Points		      [9, 0; 0, -105]
+      Points		      [9, 0; 0, -110]
       DstBlock		      "I2C"
       DstPort		      3
     }
@@ -8695,7 +8637,6 @@ Model {
       ZOrder		      8088
       SrcBlock		      "PID Microvalves1"
       SrcPort		      2
-      Points		      [58, 0; 0, -5]
       DstBlock		      "Manual Switch25"
       DstPort		      2
     }
@@ -8781,7 +8722,7 @@ Model {
       ZOrder		      8121
       SrcBlock		      "Mux1"
       SrcPort		      1
-      Points		      [90, 0; 0, -130]
+      Points		      [107, 0; 0, -115]
       DstBlock		      "Switch14"
       DstPort		      3
     }
@@ -8789,6 +8730,7 @@ Model {
       ZOrder		      8129
       SrcBlock		      "From19"
       SrcPort		      1
+      Points		      [0, -15]
       DstBlock		      "Switch14"
       DstPort		      2
     }
@@ -8963,7 +8905,6 @@ Model {
       ZOrder		      8149
       SrcBlock		      "Subsystem5"
       SrcPort		      1
-      Points		      [94, 0; 0, 25]
       DstBlock		      "Mux2"
       DstPort		      1
     }
@@ -8978,7 +8919,6 @@ Model {
       ZOrder		      8151
       SrcBlock		      "Subsystem5"
       SrcPort		      3
-      Points		      [55, 0; 0, -25]
       DstBlock		      "Mux2"
       DstPort		      3
     }
@@ -8986,23 +8926,25 @@ Model {
       ZOrder		      8152
       SrcBlock		      "Constant3"
       SrcPort		      1
-      Points		      [70, 0; 0, -35]
+      Points		      [40, 0]
       Branch {
-	ZOrder			8154
-	DstBlock		"Mux2"
-	DstPort			5
-      }
-      Branch {
-	ZOrder			8153
+	ZOrder			8279
 	Points			[0, -35]
 	DstBlock		"Mux2"
 	DstPort			4
+      }
+      Branch {
+	ZOrder			8278
+	Points			[0, 25]
+	DstBlock		"Mux2"
+	DstPort			5
       }
     }
     Line {
       ZOrder		      8156
       SrcBlock		      "Mux2"
       SrcPort		      1
+      Points		      [5, 0]
       DstBlock		      "Goto68"
       DstPort		      1
     }
@@ -9043,7 +8985,7 @@ Model {
       BackgroundColor	      "[0.956863, 0.980392, 0.921569]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      98257
+      ZOrder		      98521
       FontSize		      12
     }
     Annotation {
@@ -9056,12 +8998,12 @@ Model {
       BackgroundColor	      "[0.956863, 0.980392, 0.921569]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      98256
+      ZOrder		      98520
       FontSize		      12
     }
     Annotation {
       SID		      "2239"
-      Position		      [1483, 1664, 1911, 2017]
+      Position		      [1483, 1664, 2226, 2022]
       InternalMargins	      [0, 0, 0, 0]
       FixedHeight	      on
       FixedWidth	      on
@@ -9069,7 +9011,7 @@ Model {
       BackgroundColor	      "[0.956863, 0.980392, 0.921569]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      98254
+      ZOrder		      98518
       FontSize		      12
     }
     Annotation {
@@ -9078,8 +9020,8 @@ Model {
       "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
       "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
       "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
-      "t:0px;\"><span style=\" font-size:24px;\">Sensors (Beckhoff) </span></p></body></html>"
-      Position		      [416, 1979, 628, 2009]
+      "t:0px;\"><span style=\" font-size:24px;\">Sensors (via Beckhoff I/O) </span></p></body></html>"
+      Position		      [416, 1979, 704, 2009]
       InternalMargins	      [0, 0, 0, 0]
       Interpreter	      "rich"
       ZOrder		      -1
@@ -9094,7 +9036,7 @@ Model {
       BackgroundColor	      "[0.956863, 0.980392, 0.921569]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      98253
+      ZOrder		      98517
       FontSize		      12
     }
     Annotation {
@@ -9103,8 +9045,8 @@ Model {
       "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
       "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
       "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
-      "t:0px;\"><span style=\" font-size:24px;\">Actuators (Beckhoff) </span></p></body></html>"
-      Position		      [-64, 1976, 161, 2006]
+      "t:0px;\"><span style=\" font-size:24px;\">Actuators (via Beckhoff I/O) </span></p></body></html>"
+      Position		      [-64, 1976, 237, 2006]
       InternalMargins	      [0, 0, 0, 0]
       Interpreter	      "rich"
       ZOrder		      -6
@@ -9119,7 +9061,7 @@ Model {
       BackgroundColor	      "[0.992157, 0.937255, 0.913725]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      98250
+      ZOrder		      98514
       FontSize		      12
     }
     Annotation {
@@ -9132,7 +9074,7 @@ Model {
       BackgroundColor	      "[0.956863, 0.980392, 0.921569]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      98251
+      ZOrder		      98515
       FontSize		      12
     }
     Annotation {
@@ -9145,7 +9087,7 @@ Model {
       BackgroundColor	      "[0.956863, 0.980392, 0.921569]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      98252
+      ZOrder		      98516
       FontSize		      12
     }
     Annotation {
@@ -9182,7 +9124,7 @@ Model {
       BackgroundColor	      "[0.956863, 0.980392, 0.921569]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      98255
+      ZOrder		      98519
       FontSize		      12
     }
     Annotation {
@@ -9191,8 +9133,8 @@ Model {
       "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
       "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
       "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
-      "t:0px;\"><span style=\" font-size:24px;\">Position control (semi-modular) </span></p></body></html>"
-      Position		      [196, 2564, 536, 2594]
+      "t:0px;\"><span style=\" font-size:24px;\">Position control (semi-modular SPONGE) </span></p></body></html>"
+      Position		      [191, 2585, 640, 2615]
       InternalMargins	      [0, 0, 0, 0]
       Interpreter	      "rich"
       ZOrder		      97316
@@ -9215,8 +9157,8 @@ Model {
       "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
       "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
       "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
-      "t:0px;\"><span style=\" font-size:24px;\">Position control (modular) </span></p></body></html>"
-      Position		      [207, 3116, 488, 3146]
+      "t:0px;\"><span style=\" font-size:24px;\">Position control (modular SPONGE) </span></p></body></html>"
+      Position		      [191, 3118, 582, 3148]
       InternalMargins	      [0, 0, 0, 0]
       Interpreter	      "rich"
       ZOrder		      97680
@@ -9227,8 +9169,8 @@ Model {
       "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
       "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
       "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
-      "t:0px;\"><span style=\" font-size:24px;\">Sensors (I2C, modular) </span></p></body></html>"
-      Position		      [1112, 3031, 1368, 3061]
+      "t:0px;\"><span style=\" font-size:24px;\">Sensors (I2C, modular SPONGE) </span></p></body></html>"
+      Position		      [1112, 3031, 1477, 3061]
       InternalMargins	      [0, 0, 0, 0]
       Interpreter	      "rich"
       ZOrder		      98097
@@ -9258,6 +9200,9 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 3 0 0]
     viewObj		    2
+    visible		    1
+    subviewS {
+    }
     ssIdHighWaterMark	    6
     decomposition	    CLUSTER_CHART
     type		    EML_CHART

@@ -38,7 +38,7 @@ Library {
 	$PropName		"ExplorerBarInfo"
 	$ObjectID		4
 	$ClassName		"Simulink.ExplorerBarInfo"
-	Visible			[0]
+	Visible			[1]
       }
       Object {
 	$PropName		"EditorsInfo"
@@ -47,9 +47,9 @@ Library {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[2450.0, 1264.0]
-	ZoomFactor		[1.25]
-	Offset			[-463.64420614198491, -178.21262023150081]
+	Extents			[2450.0, 1234.0]
+	ZoomFactor		[0.5]
+	Offset			[-1785.0023320021976, -672.48611092548936]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -81,11 +81,11 @@ Library {
   Creator		  "habich"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "habich"
+  LastModifiedBy	  "entwicklungs-pc"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Feb 07 17:39:38 2024"
-  RTWModifiedTimeStamp	  629227251
-  ModelVersionFormat	  "1.%<AutoIncrement:81>"
+  LastModifiedDate	  "Fri Mar 06 17:14:48 2026"
+  RTWModifiedTimeStamp	  694718081
+  ModelVersionFormat	  "1.%<AutoIncrement:88>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -1107,7 +1107,7 @@ Library {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "125"
+    ZoomFactor		    "50"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "322"
     Block {
@@ -1115,7 +1115,7 @@ Library {
       Name		      "Angle_Hall"
       SID		      "99"
       Ports		      [1, 1]
-      Position		      [90, 222, 235, 278]
+      Position		      [165, 222, 310, 278]
       ZOrder		      77242
       ErrorFcn		      "Stateflow.Translate.translate"
       PermitHierarchicalResolution "ExplicitOnly"
@@ -1226,15 +1226,15 @@ Library {
     }
     Block {
       BlockType		      SubSystem
-      Name		      "Angle_Hall_I2C\n"
+      Name		      "Angle_Hall_I2C"
       SID		      "314"
       Ports		      [2, 1]
-      Position		      [110, 335, 235, 390]
+      Position		      [175, 335, 300, 390]
       ZOrder		      100000
       RequestExecContextInheritance off
       ContentPreviewEnabled   on
       System {
-	Name			"Angle_Hall_I2C\n"
+	Name			"Angle_Hall_I2C"
 	Location		[72, 27, 2560, 1440]
 	Open			off
 	PortBlocksUseCompactNotation off
@@ -1263,7 +1263,7 @@ Library {
 	  BlockType		  Inport
 	  Name			  "upperbyte"
 	  SID			  "316"
-	  Position		  [40, 73, 70, 87]
+	  Position		  [40, 53, 70, 67]
 	  ZOrder		  100000
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -1277,7 +1277,7 @@ Library {
 	  ZOrder		  100000
 	  ForegroundColor	  "green"
 	  HideAutomaticName	  off
-	  LibraryVersion	  "1.56"
+	  LibraryVersion	  "1.81"
 	  SourceBlock		  "haley_test_bench_lib/Angle_Hall"
 	  SourceType		  "SubSystem"
 	  ShowPortLabels	  "FromPortIcon"
@@ -1585,7 +1585,6 @@ Library {
 	  ZOrder		  1
 	  SrcBlock		  "upperbyte"
 	  SrcPort		  1
-	  Points		  [213, 0; 0, -20]
 	  DstBlock		  "MATLAB Function15"
 	  DstPort		  2
 	}
@@ -3491,15 +3490,15 @@ Library {
     }
     Block {
       BlockType		      SubSystem
-      Name		      "p_soll2bit"
+      Name		      "p_des_to_bit"
       SID		      "308"
       Ports		      [2, 1]
-      Position		      [1190, 242, 1320, 293]
+      Position		      [1140, 257, 1270, 308]
       ZOrder		      100000
       RequestExecContextInheritance off
       ContentPreviewEnabled   on
       System {
-	Name			"p_soll2bit"
+	Name			"p_des_to_bit"
 	Location		[72, 27, 2560, 1440]
 	Open			off
 	PortBlocksUseCompactNotation off
@@ -3515,10 +3514,10 @@ Library {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"150"
+	ZoomFactor		"175"
 	Block {
 	  BlockType		  Inport
-	  Name			  "p_soll_bar"
+	  Name			  "p_des_bar"
 	  SID			  "309"
 	  Position		  [415, -17, 445, -3]
 	  ZOrder		  100000
@@ -3826,7 +3825,7 @@ Library {
 	}
 	Line {
 	  ZOrder		  8
-	  SrcBlock		  "p_soll_bar"
+	  SrcBlock		  "p_des_bar"
 	  SrcPort		  1
 	  Points		  [85, 0; 0, 40]
 	  DstBlock		  "Switch14"
@@ -3855,66 +3854,6 @@ Library {
 	}
       }
     }
-    Annotation {
-      SID		      "187"
-      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
-      "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
-      "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
-      "t:0px;\"><span style=\" font-size:28px; font-weight:600;\">Sensors</span></p></body></html>"
-      Position		      [102, 143, 214, 177]
-      InternalMargins	      [0, 0, 0, 0]
-      Interpreter	      "rich"
-      ZOrder		      -1
-    }
-    Annotation {
-      SID		      "190"
-      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
-      "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
-      "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
-      "t:0px;\"><span style=\" font-size:28px; font-weight:600;\">EL4102</span></p></body></html>"
-      Position		      [417, 143, 517, 177]
-      InternalMargins	      [0, 0, 0, 0]
-      Interpreter	      "rich"
-      ZOrder		      -1
-    }
-    Annotation {
-      SID		      "191"
-      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
-      "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
-      "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
-      "t:0px;\"><span style=\" font-size:28px; font-weight:600;\">EL3702</span></p></body></html>"
-      Position		      [670, 143, 770, 177]
-      InternalMargins	      [0, 0, 0, 0]
-      Interpreter	      "rich"
-      ZOrder		      -2
-    }
-    Annotation {
-      SID		      "236"
-      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
-      "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
-      "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
-      "t:0px;\"><span style=\" font-size:28px; font-weight:600;\">EL3104</span></p></body></html>"
-      Position		      [906, 143, 1006, 177]
-      InternalMargins	      [0, 0, 0, 0]
-      Interpreter	      "rich"
-      ZOrder		      -17
-    }
-    Annotation {
-      SID		      "313"
-      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
-      "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
-      "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
-      "t:0px;\"><span style=\" font-size:28px; font-weight:600;\">Helper</span></p></body></html>"
-      Position		      [1201, 143, 1290, 177]
-      InternalMargins	      [0, 0, 0, 0]
-      Interpreter	      "rich"
-      ZOrder		      1
-    }
   }
 }
 #Finite State Machines
@@ -3941,7 +3880,6 @@ Stateflow {
     treeNode		    [0 3 0 0]
     viewObj		    2
     visible		    1
-    toolbarMode		    LIBRARY_TOOLBAR
     subviewS {
     }
     ssIdHighWaterMark	    5
@@ -4077,7 +4015,7 @@ Stateflow {
     chartFileNumber	    11
     disableImplicitCasting  1
     eml {
-      name		      "BeckhoffToVoltage"
+      name		      "Beckhoff_to_Voltage"
     }
     firstData		    11
     firstTransition	    16
@@ -4097,8 +4035,8 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     eml {
       isEML		      1
-      script		      "function [U_ch1_volt,U_ch2_volt] = BeckhoffToVoltage(value_ch1,value_ch2)\n%Beckhoff EL3702 +-10V"
-      " Analog Input 16 Bit\nU_ch1_volt=10/32767*value_ch1;\nU_ch2_volt=10/32767*value_ch2;"
+      script		      "function [U_ch1_volt,U_ch2_volt] = Beckhoff_to_Voltage(value_ch1,value_ch2)\n%Beckhoff EL3702 +-1"
+      "0V Analog Input 16 Bit\nU_ch1_volt=10/32767*value_ch1;\nU_ch2_volt=10/32767*value_ch2;"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
@@ -4247,7 +4185,10 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 19 0 0]
     viewObj		    18
+    visible		    1
     toolbarMode		    LIBRARY_TOOLBAR
+    subviewS {
+    }
     ssIdHighWaterMark	    7
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -4432,7 +4373,7 @@ Stateflow {
     chartFileNumber	    17
     disableImplicitCasting  1
     eml {
-      name		      "BeckhoffToVoltage"
+      name		      "Beckhoff_to_Voltage"
     }
     firstData		    29
     firstTransition	    38
@@ -4452,9 +4393,9 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     eml {
       isEML		      1
-      script		      "function [U_ch1_volt,U_ch2_volt,U_ch3_volt,U_ch4_volt] = BeckhoffToVoltage(value_ch1,value_ch2,va"
-      "lue_ch3,value_ch4)\n%Beckhoff EL3104 +-10V Analog Input 16 Bit\nU_ch1_volt=10/32767*value_ch1;\nU_ch2_volt=10/32"
-      "767*value_ch2;\nU_ch3_volt=10/32767*value_ch3;\nU_ch4_volt=10/32767*value_ch4;"
+      script		      "function [U_ch1_volt,U_ch2_volt,U_ch3_volt,U_ch4_volt] = Beckhoff_to_Voltage(value_ch1,value_ch2,"
+      "value_ch3,value_ch4)\n%Beckhoff EL3104 +-10V Analog Input 16 Bit\nU_ch1_volt=10/32767*value_ch1;\nU_ch2_volt=10/"
+      "32767*value_ch2;\nU_ch3_volt=10/32767*value_ch3;\nU_ch4_volt=10/32767*value_ch4;"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
@@ -4711,7 +4652,7 @@ Stateflow {
     chartFileNumber	    18
     disableImplicitCasting  1
     eml {
-      name		      "BeckhoffToVoltage"
+      name		      "Beckhoff_to_Voltage"
     }
     firstData		    42
     firstTransition	    47
@@ -4731,8 +4672,8 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     eml {
       isEML		      1
-      script		      "function [U_ch1_volt,U_ch2_volt] = BeckhoffToVoltage(value_ch1,value_ch2)\n%Beckhoff EL3702 +-10V"
-      " Analog Input 16 Bit\nU_ch1_volt=10/32767*value_ch1;\nU_ch2_volt=10/32767*value_ch2;"
+      script		      "function [U_ch1_volt,U_ch2_volt] = Beckhoff_to_Voltage(value_ch1,value_ch2)\n%Beckhoff EL3702 +-1"
+      "0V Analog Input 16 Bit\nU_ch1_volt=10/32767*value_ch1;\nU_ch2_volt=10/32767*value_ch2;"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
@@ -4891,7 +4832,7 @@ Stateflow {
     chartFileNumber	    19
     disableImplicitCasting  1
     eml {
-      name		      "BeckhoffToVoltage3104"
+      name		      "Beckhoff_to_Voltage3104"
     }
     firstData		    51
     firstTransition	    60
@@ -4911,9 +4852,9 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     eml {
       isEML		      1
-      script		      "function [U_ch1_volt,U_ch2_volt,U_ch3_volt,U_ch4_volt] = BeckhoffToVoltage3104(value_ch1,value_ch"
-      "2,value_ch3,value_ch4)\n%Beckhoff EL3104 +-10V Analog Input 16 Bit\nU_ch1_volt=10/32767*value_ch1;\nU_ch2_volt=1"
-      "0/32767*value_ch2;\nU_ch3_volt=10/32767*value_ch3;\nU_ch4_volt=10/32767*value_ch4;"
+      script		      "function [U_ch1_volt,U_ch2_volt,U_ch3_volt,U_ch4_volt] = Beckhoff_to_Voltage3104(value_ch1,value_"
+      "ch2,value_ch3,value_ch4)\n%Beckhoff EL3104 +-10V Analog Input 16 Bit\nU_ch1_volt=10/32767*value_ch1;\nU_ch2_volt"
+      "=10/32767*value_ch2;\nU_ch3_volt=10/32767*value_ch3;\nU_ch4_volt=10/32767*value_ch4;"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
@@ -5154,14 +5095,15 @@ Stateflow {
   chart {
     id			    62
     machine		    1
-    name		    "p_soll2bit/MATLAB Function7"
+    name		    "p_des_to_bit/MATLAB Function7"
     windowPosition	    [422 539.941 189 413]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 63 0 0]
     viewObj		    62
     visible		    1
-    toolbarMode		    LIBRARY_TOOLBAR
+    subviewS {
+    }
     ssIdHighWaterMark	    5
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -5273,19 +5215,21 @@ Stateflow {
   instance {
     id			    68
     machine		    1
-    name		    "p_soll2bit/MATLAB Function7"
+    name		    "p_des_to_bit/MATLAB Function7"
     chart		    62
   }
   chart {
     id			    69
     machine		    1
-    name		    "p_soll2bit/MATLAB Function9"
+    name		    "p_des_to_bit/MATLAB Function9"
     windowPosition	    [422 539.941 189 413]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 70 0 0]
     viewObj		    69
-    toolbarMode		    LIBRARY_TOOLBAR
+    visible		    1
+    subviewS {
+    }
     ssIdHighWaterMark	    5
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -5398,13 +5342,13 @@ Stateflow {
   instance {
     id			    75
     machine		    1
-    name		    "p_soll2bit/MATLAB Function9"
+    name		    "p_des_to_bit/MATLAB Function9"
     chart		    69
   }
   chart {
     id			    76
     machine		    1
-    name		    "Angle_Hall_I2C\n/MATLAB Function15"
+    name		    "Angle_Hall_I2C/MATLAB Function15"
     windowPosition	    [422 539.941 189 413]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 3600 1200 1.180555555555556]
@@ -5552,13 +5496,13 @@ Stateflow {
   instance {
     id			    83
     machine		    1
-    name		    "Angle_Hall_I2C\n/MATLAB Function15"
+    name		    "Angle_Hall_I2C/MATLAB Function15"
     chart		    76
   }
   chart {
     id			    84
     machine		    1
-    name		    "Angle_Hall_I2C\n/MATLAB Function16"
+    name		    "Angle_Hall_I2C/MATLAB Function16"
     windowPosition	    [422 539.941 189 413]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 3600 1200 1.180555555555556]
@@ -5680,7 +5624,7 @@ Stateflow {
   instance {
     id			    90
     machine		    1
-    name		    "Angle_Hall_I2C\n/MATLAB Function16"
+    name		    "Angle_Hall_I2C/MATLAB Function16"
     chart		    84
   }
   target {
